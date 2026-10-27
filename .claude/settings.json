@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Windsor_ai__execute_action",
+      "Bash(python3 agenda/postar.py:*)",
+      "Bash(git pull:*)",
+      "Bash(git add agenda/fila.json)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}
