@@ -11,7 +11,7 @@ FILA = Path(__file__).with_name("fila.json")
 BASE_URL = "https://raw.githubusercontent.com/Ericles-7/hortifruti3irmaos-instagram/claude/instagram-hortifruti-arts-xtrq1r/"
 
 # Vídeos vão pelo jsDelivr (serve como video/mp4, o raw do GitHub não), fixados num commit.
-BASE_VIDEO = "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-instagram@cf7011114d8a65a2b2bee1801d5005e37e759c39/"
+BASE_VIDEO = "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-instagram@950863dff64a14e3288b715bd6f44293545536c4/"
 
 INICIO = date(2026, 10, 28)
 FIM = date(2026, 11, 25)
