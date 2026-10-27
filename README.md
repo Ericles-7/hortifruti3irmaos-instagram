@@ -14,8 +14,9 @@ Artes publicadas no @hortifruti3irmaos_uirauna.
 | Sábado | vendas / vem pra feira (`v*`) | — | bom dia, endereço, zap |
 | Domingo | descanso (ou reaproveitar um post) | — | família ou fim de semana |
 
-- **Volume:** 3 carrosséis e 2 reels por semana; stories todo dia, 3 a 4 por dia.
-- **Horários:** stories às 7h, 11h30 e 17h; feed e reels entre 11h e 12h ou entre 18h e 19h. Ajustar pelas estatísticas do Instagram depois de algumas semanas.
+- **Volume:** 4 carrosséis e 2 reels por semana; 3 stories por dia.
+- **Horários:** stories às 6h53, 11h53 e 16h53; feed e reels às 17h53. Ajustar pelas estatísticas do Instagram depois de algumas semanas.
+- **Automação:** feed e stories são publicados sozinhos a partir de `agenda/fila.json`. Veja `agenda/AUTOMACAO.md`.
 - **Stories:** as artes ficam em `stories/banco/`.
 
 ## Arquivos

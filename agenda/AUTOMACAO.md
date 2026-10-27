@@ -1,0 +1,33 @@
+# Publicação automática
+
+Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (horário de Uiraúna) e publica no @hortifruti3irmaos_uirauna o que estiver vencido em `agenda/fila.json`. A publicação usa o conector Windsor.ai, na conta do Instagram `17841446253151662`.
+
+## Arquivos
+
+- `fila.json`: tudo o que está programado (data, hora, tipo, imagens, legenda e status).
+- `gerar_fila.py`: gera a fila. As legendas dos carrosséis e o rodízio dos stories estão nele.
+- `postar.py`: usado pela tarefa para listar o que está pendente e marcar o que já foi publicado.
+
+## Passo a passo de cada execução
+
+1. Atualizar o branch `claude/instagram-hortifruti-arts-xtrq1r`.
+2. Rodar `python3 agenda/postar.py pendentes`. A saída lista as postagens de **hoje** cujo horário já chegou e que ainda estão `pendente`. Se a lista vier vazia, encerrar.
+3. Publicar cada item da lista no Windsor.ai (`connector: instagram`, `account: 17841446253151662`):
+   - `story` → ação `create_story`, com `image_url` = `urls[0]`.
+   - `carrossel` → ação `create_carousel_post`, com `image_urls` = `urls` e `caption` = `legenda`.
+4. Registrar o resultado:
+   - Se deu certo: `python3 agenda/postar.py marcar <id> publicado <media_id>`.
+   - Se falhou: `python3 agenda/postar.py marcar <id> erro "<mensagem>"`. Não tentar de novo na mesma execução.
+5. Fazer o commit de `agenda/fila.json` e o push para o mesmo branch.
+
+Regras:
+- Publicar só o que está na fila.
+- Nunca publicar um item de outro dia.
+- Nunca publicar duas vezes o mesmo `id`.
+
+## Como mudar a programação
+
+- **Trocar uma legenda, uma data ou acrescentar posts:** editar `gerar_fila.py` e rodar `python3 agenda/gerar_fila.py`. Os itens já publicados continuam marcados como publicados.
+- **Novas artes:** colocar os `.jpg` no repositório e enviar para o branch antes do horário do post. A fila aponta para o endereço público do arquivo no GitHub.
+- **Pausar um item:** trocar o `status` dele para `pausado` em `fila.json`.
+- **Reels:** a tarefa ainda não publica reels, porque não há vídeos no repositório. Quando houver (`.mp4`, 9:16, de 3 s a 15 min), dá para acrescentar itens do tipo `reel` com a ação `create_video_post`.
