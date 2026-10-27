@@ -34,7 +34,7 @@ BRANCO = (255, 255, 255)
 BATIDA = musica.BATIDA
 INSTAGRAM = "@hortifruti3irmaos_uirauna"
 
-GANCHO = "Aqui no 3 Irmãos\nvocê encontra..."
+GANCHO = "Aqui no Hortifruti 3 Irmãos\nvocê encontra..."
 # Cenas do vídeo bruto: (início em s, duração em batidas, texto). A 1ª é o gancho.
 # Somam 36 batidas (9 compassos); a assinatura final ocupa mais 8.
 CENAS = [
