@@ -10,6 +10,9 @@ from pathlib import Path
 FILA = Path(__file__).with_name("fila.json")
 BASE_URL = "https://raw.githubusercontent.com/Ericles-7/hortifruti3irmaos-instagram/claude/instagram-hortifruti-arts-xtrq1r/"
 
+# Vídeos vão pelo jsDelivr (serve como video/mp4, o raw do GitHub não), fixados num commit.
+BASE_VIDEO = "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-instagram@cf7011114d8a65a2b2bee1801d5005e37e759c39/"
+
 INICIO = date(2026, 10, 28)
 FIM = date(2026, 11, 25)
 
@@ -132,6 +135,17 @@ FEED = {
         f"#DicaDaFeira {TAGS}"),
 }
 
+# Reels: (vídeo, capa, legenda).
+REELS = {
+    date(2026, 10, 30): ("reels/tour-banca.mp4", "reels/tour-banca-capa.jpg",
+        "Vem com a gente num tour pela banca! 🍊🍍🍉\n"
+        "Laranja, maracujá, batata, cebola, tomate, abacaxi, melão e muito mais: tudo fresquinho e escolhido a dedo aqui no Hortifruti 3 Irmãos.\n"
+        "Já garantiu a feira do fim de semana? Passe aqui ou mande sua lista no Zap que a gente separa pra você.\n"
+        f"{RODAPE}\n"
+        "Marca aqui quem precisa conhecer a nossa banca 👇\n"
+        f"#TourPelaBanca #FimDeSemana {TAGS}"),
+}
+
 BOM_DIA = ["bom-dia-1", "bom-dia-2", "bom-dia-3"]
 DICAS = ["dica-tomate", "dica-banana", "dica-folhas", "dica-manga", "dica-cebola",
          "dica-limao", "dica-abacate", "almoco", "zap-3", "dica-cenoura", "dica-morango",
@@ -168,6 +182,14 @@ def gerar():
                 "imagens": [f"{nome}-{i}.jpg" for i in (1, 2, 3)],
                 "legenda": legenda,
             })
+        if dia in REELS:
+            video, capa, legenda = REELS[dia]
+            postagens.append({
+                "id": f"{dia}-{HORA_FEED}-reel-{Path(video).stem}",
+                "data": str(dia), "hora": HORA_FEED, "tipo": "reel",
+                "video": video, "capa": capa,
+                "legenda": legenda,
+            })
         dia += timedelta(days=1)
         n += 1
 
@@ -180,6 +202,7 @@ def gerar():
     FILA.write_text(json.dumps({
         "fuso": "America/Fortaleza",
         "base_url": BASE_URL,
+        "base_video": BASE_VIDEO,
         "postagens": postagens,
     }, ensure_ascii=False, indent=2) + "\n")
     print(f"{len(postagens)} postagens de {INICIO} a {FIM}")

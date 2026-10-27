@@ -28,7 +28,11 @@ def pendentes():
     saida = []
     for p in fila["postagens"]:
         if p["status"] == "pendente" and p["data"] == hoje and p["hora"] <= hora:
-            saida.append({**p, "urls": [fila["base_url"] + i for i in p["imagens"]]})
+            if p["tipo"] == "reel":
+                saida.append({**p, "video_url": fila["base_video"] + p["video"],
+                              "cover_url": fila["base_url"] + p["capa"]})
+            else:
+                saida.append({**p, "urls": [fila["base_url"] + i for i in p["imagens"]]})
     print(json.dumps(saida, ensure_ascii=False, indent=2))
 
 

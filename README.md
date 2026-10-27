@@ -16,7 +16,7 @@ Artes publicadas no @hortifruti3irmaos_uirauna.
 
 - **Volume:** 4 carrosséis e 2 reels por semana; 3 stories por dia.
 - **Horários:** stories às 6h53, 11h53 e 16h53; feed e reels às 17h53. Ajustar pelas estatísticas do Instagram depois de algumas semanas.
-- **Automação:** feed e stories são publicados sozinhos a partir de `agenda/fila.json`. Veja `agenda/AUTOMACAO.md`.
+- **Automação:** feed, reels e stories são publicados sozinhos a partir de `agenda/fila.json`. Veja `agenda/AUTOMACAO.md`.
 - **Stories:** as artes ficam em `stories/banco/`.
 
 ## Arquivos
@@ -27,3 +27,4 @@ Artes publicadas no @hortifruti3irmaos_uirauna.
   - `q*`: Quinta da Verdura
   - `v*`: vendas
 - Stories: 1080×1920, em `stories/banco/`.
+- Reels: 1080×1920, em `reels/`, cada um com capa e roteiro.

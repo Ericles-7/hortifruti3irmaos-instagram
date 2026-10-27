@@ -1,6 +1,7 @@
 {
   "fuso": "America/Fortaleza",
   "base_url": "https://raw.githubusercontent.com/Ericles-7/hortifruti3irmaos-instagram/claude/instagram-hortifruti-arts-xtrq1r/",
+  "base_video": "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-instagram@cf7011114d8a65a2b2bee1801d5005e37e759c39/",
   "postagens": [
     {
       "id": "2026-10-28-06:53-story-bom-dia-1",
@@ -116,6 +117,16 @@
       "imagens": [
         "stories/banco/fim-de-semana.jpg"
       ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-10-30-17:53-reel-tour-banca",
+      "data": "2026-10-30",
+      "hora": "17:53",
+      "tipo": "reel",
+      "video": "reels/tour-banca.mp4",
+      "capa": "reels/tour-banca-capa.jpg",
+      "legenda": "Vem com a gente num tour pela banca! 🍊🍍🍉\nLaranja, maracujá, batata, cebola, tomate, abacaxi, melão e muito mais: tudo fresquinho e escolhido a dedo aqui no Hortifruti 3 Irmãos.\nJá garantiu a feira do fim de semana? Passe aqui ou mande sua lista no Zap que a gente separa pra você.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nMarca aqui quem precisa conhecer a nossa banca 👇\n#TourPelaBanca #FimDeSemana #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pendente"
     },
     {

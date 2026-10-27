@@ -15,6 +15,7 @@ Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (
 3. Publicar cada item da lista no Windsor.ai (`connector: instagram`, `account: 17841446253151662`):
    - `story` → ação `create_story`, com `image_url` = `urls[0]`.
    - `carrossel` → ação `create_carousel_post`, com `image_urls` = `urls` e `caption` = `legenda`.
+   - `reel` → ação `create_video_post`, com `video_url`, `cover_url`, `caption` = `legenda` e `share_to_feed` = true.
 4. Registrar o resultado:
    - Se deu certo: `python3 agenda/postar.py marcar <id> publicado <media_id>`.
    - Se falhou: `python3 agenda/postar.py marcar <id> erro "<mensagem>"`. Não tentar de novo na mesma execução.
@@ -30,4 +31,4 @@ Regras:
 - **Trocar uma legenda, uma data ou acrescentar posts:** editar `gerar_fila.py` e rodar `python3 agenda/gerar_fila.py`. Os itens já publicados continuam marcados como publicados.
 - **Novas artes:** colocar os `.jpg` no repositório e enviar para o branch antes do horário do post. A fila aponta para o endereço público do arquivo no GitHub.
 - **Pausar um item:** trocar o `status` dele para `pausado` em `fila.json`.
-- **Reels:** a tarefa ainda não publica reels, porque não há vídeos no repositório. Quando houver (`.mp4`, 9:16, de 3 s a 15 min), dá para acrescentar itens do tipo `reel` com a ação `create_video_post`.
+- **Reels:** os vídeos ficam em `reels/` e são programados em `REELS`, dentro de `gerar_fila.py`. O vídeo é servido pelo jsDelivr, fixado num commit: depois de enviar um vídeo novo, atualizar o `BASE_VIDEO` com o commit dele. O motivo é que o raw do GitHub entrega `.mp4` sem o tipo de vídeo. A capa vai pelo raw do GitHub, como as imagens. O vídeo precisa ter menos de 20 MB.
