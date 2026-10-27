@@ -1,23 +1,27 @@
-# Reel "Tour pela banca": roteiro
+# Reel "Tour pela banca"
 
-- **Duração:** 31,6 s, em 1080×1920.
+- **Duração:** 23,5 s, em 1080×1920.
 - **Publicação:** sexta, 30/10, às 17h53.
-- **Arquivos:** `tour-banca.mp4` e `tour-banca-capa.jpg`. O vídeo é gerado por `editar_reel.py`.
+- **Arquivos:** `tour-banca.mp4` e `tour-banca-capa.jpg`. O vídeo é gerado por `editar_reel.py` e a música por `musica.py`.
 
-| Tempo | Imagem | Texto na tela | Narração |
-|---|---|---|---|
-| 0–3 s | laranjas | TOUR PELA BANCA · Vem ver o que tem hoje! | "Ei, vem ver o que tem hoje no Hortifruti Três Irmãos!" |
-| 3–8 s | laranja, maracujá, batata | Laranja fresquinha · Maracujá e batata | "Laranja docinha, maracujá e batata selecionada." |
-| 8–13 s | cebola, tomate | Cebola roxa e branca · Tomate no ponto | "Cebola roxa e branca, e tomate no ponto pro seu almoço." |
-| 13–17 s | abacaxi, melão | Abacaxi e melão | "Abacaxi e melão cheirosos, do jeitinho que você gosta." |
-| 17–21 s | tangerina, abacate | Fruta escolhida a dedo | "Tudo escolhido a dedo, com preço baixo de verdade." |
-| 21–28 s | laranja, limão | Tudo fresquinho pra você | "Faz sua feira aqui com a gente, ou manda sua lista no Zap, que a gente separa e leva até você!" |
-| 28–31,6 s | cartão final: logo, Zap e endereço | Feira fresquinha todo dia! | "Hortifruti Três Irmãos: feira fresquinha todo dia!" |
+## Edição
 
-O logo do hortifruti aparece no topo durante todo o vídeo.
+- **Imagem:** estabilização forte, cores mais vivas e um pouco mais quentes, mais nitidez e vinheta leve.
+- **Cortes:** saíram os trechos tremidos e borrados do vídeo bruto. Cada corte cai na batida da música (112 BPM).
+- **Movimento:** zoom suave em cada cena, alternando para dentro e para fora.
+- **Textos:** entram com fade e sobem um pouco. O logo fica no topo até o cartão final.
+- **Final:** o cartão entra com um flash branco e um zoom leve.
+- **Música:** ukulele, baixo, marimba e percussão leve. A trilha foi composta aqui, então não tem direitos autorais. Não há voz.
 
-## Voz
+## Cenas
 
-A narração é uma voz sintética em português: o Piper TTS, com a voz `pt-br-edresson-low`, sobre o som ambiente da banca em volume baixo.
-
-Para soar mais perto do cliente, dá para gravar a narração no celular com a voz de um dos irmãos, seguindo a coluna "Narração" acima, e colocar no lugar da voz sintética.
+| Tempo | Cena | Texto na tela |
+|---|---|---|
+| 0–2,7 s | laranjas | TOUR PELA BANCA · Vem ver o que tem hoje! |
+| 2,7–4,8 s | maracujá e batata | Maracujá e batata |
+| 4,8–7,0 s | cebola | Cebola roxa e branca |
+| 7,0–8,6 s | tomate | Tomate no ponto |
+| 8,6–11,8 s | abacaxi e melão | Abacaxi e melão |
+| 11,8–14,5 s | abacate e tangerina | Fruta escolhida a dedo |
+| 14,5–19,3 s | laranja e limão | Tudo fresquinho pra você |
+| 19,3–23,5 s | cartão final: logo, Zap e endereço | Feira fresquinha todo dia! |
