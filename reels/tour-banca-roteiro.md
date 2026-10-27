@@ -1,7 +1,7 @@
 # Reel "Tour pela banca"
 
 - **Duração:** 23,5 s, em 1080×1920.
-- **Publicação:** sexta, 30/10, às 17h53.
+- **Publicação:** nenhuma. Foi um vídeo de teste e serve de modelo para a edição dos próximos reels.
 - **Arquivos:** `tour-banca.mp4` e `tour-banca-capa.jpg`. O vídeo é gerado por `editar_reel.py` e a música por `musica.py`.
 
 ## Edição

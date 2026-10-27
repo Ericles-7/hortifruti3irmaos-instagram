@@ -135,16 +135,8 @@ FEED = {
         f"#DicaDaFeira {TAGS}"),
 }
 
-# Reels: (vídeo, capa, legenda).
-REELS = {
-    date(2026, 10, 30): ("reels/tour-banca.mp4", "reels/tour-banca-capa.jpg",
-        "Vem com a gente num tour pela banca! 🍊🍍🍉\n"
-        "Laranja, maracujá, batata, cebola, tomate, abacaxi, melão e muito mais: tudo fresquinho e escolhido a dedo aqui no Hortifruti 3 Irmãos.\n"
-        "Já garantiu a feira do fim de semana? Passe aqui ou mande sua lista no Zap que a gente separa pra você.\n"
-        f"{RODAPE}\n"
-        "Marca aqui quem precisa conhecer a nossa banca 👇\n"
-        f"#TourPelaBanca #FimDeSemana {TAGS}"),
-}
+# Reels: {data: (vídeo, capa, legenda)}. O "Tour pela banca" (reels/) foi só um teste e não é publicado.
+REELS = {}
 
 BOM_DIA = ["bom-dia-1", "bom-dia-2", "bom-dia-3"]
 DICAS = ["dica-tomate", "dica-banana", "dica-folhas", "dica-manga", "dica-cebola",
