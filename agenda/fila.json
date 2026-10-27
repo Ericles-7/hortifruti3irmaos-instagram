@@ -4,32 +4,64 @@
   "base_video": "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-midia@{commit}/",
   "postagens": [
     {
-      "id": "2026-10-28-06:53-story-bom-dia-1",
-      "data": "2026-10-28",
+      "id": "2026-10-27-06:53-story-bom-dia-1",
+      "data": "2026-10-27",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/bom-dia-1.jpg"
       ],
-      "status": "pendente"
+      "status": "pulado",
+      "erro": "bom dia fora de hora: fila começou a valer às 13h30"
     },
     {
-      "id": "2026-10-28-11:53-story-dica-tomate",
-      "data": "2026-10-28",
+      "id": "2026-10-27-11:53-story-dica-tomate",
+      "data": "2026-10-27",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/dica-tomate.jpg"
       ],
-      "status": "pendente"
+      "status": "publicado",
+      "media_id": "18388903165235985"
     },
     {
-      "id": "2026-10-28-16:53-story-zap-1",
-      "data": "2026-10-28",
+      "id": "2026-10-27-16:53-story-zap-1",
+      "data": "2026-10-27",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/zap-1.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-10-28-06:53-story-bom-dia-2",
+      "data": "2026-10-28",
+      "hora": "06:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/bom-dia-2.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-10-28-11:53-story-dica-banana",
+      "data": "2026-10-28",
+      "hora": "11:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/dica-banana.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-10-28-16:53-story-zap-2",
+      "data": "2026-10-28",
+      "hora": "16:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-2.jpg"
       ],
       "status": "pendente"
     },
@@ -47,32 +79,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-29-06:53-story-bom-dia-2",
+      "id": "2026-10-29-06:53-story-bom-dia-3",
       "data": "2026-10-29",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-29-11:53-story-dica-banana",
+      "id": "2026-10-29-11:53-story-dica-folhas",
       "data": "2026-10-29",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-banana.jpg"
+        "stories/banco/dica-folhas.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-29-16:53-story-zap-2",
+      "id": "2026-10-29-16:53-story-zap-4",
       "data": "2026-10-29",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-2.jpg"
+        "stories/banco/zap-4.jpg"
       ],
       "status": "pendente"
     },
@@ -90,22 +122,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-30-06:53-story-bom-dia-3",
+      "id": "2026-10-30-06:53-story-bom-dia-1",
       "data": "2026-10-30",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-30-11:53-story-dica-folhas",
+      "id": "2026-10-30-11:53-story-dica-manga",
       "data": "2026-10-30",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-folhas.jpg"
+        "stories/banco/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -120,22 +152,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-31-06:53-story-bom-dia-1",
+      "id": "2026-10-31-06:53-story-bom-dia-2",
       "data": "2026-10-31",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-1.jpg"
+        "stories/banco/bom-dia-2.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-31-11:53-story-dica-manga",
+      "id": "2026-10-31-11:53-story-dica-cebola",
       "data": "2026-10-31",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-manga.jpg"
+        "stories/banco/dica-cebola.jpg"
       ],
       "status": "pendente"
     },
@@ -163,22 +195,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-01-06:53-story-bom-dia-2",
+      "id": "2026-11-01-06:53-story-bom-dia-3",
       "data": "2026-11-01",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-01-11:53-story-dica-cebola",
+      "id": "2026-11-01-11:53-story-dica-limao",
       "data": "2026-11-01",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-cebola.jpg"
+        "stories/banco/dica-limao.jpg"
       ],
       "status": "pendente"
     },
@@ -193,32 +225,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-06:53-story-bom-dia-3",
+      "id": "2026-11-02-06:53-story-bom-dia-1",
       "data": "2026-11-02",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-11:53-story-dica-limao",
+      "id": "2026-11-02-11:53-story-dica-abacate",
       "data": "2026-11-02",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-limao.jpg"
+        "stories/banco/dica-abacate.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-16:53-story-zap-4",
+      "id": "2026-11-02-16:53-story-zap-1",
       "data": "2026-11-02",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-4.jpg"
+        "stories/banco/zap-1.jpg"
       ],
       "status": "pendente"
     },
@@ -236,38 +268,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-03-06:53-story-bom-dia-1",
+      "id": "2026-11-03-06:53-story-bom-dia-2",
       "data": "2026-11-03",
-      "hora": "06:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/bom-dia-1.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-03-11:53-story-dica-abacate",
-      "data": "2026-11-03",
-      "hora": "11:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/dica-abacate.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-03-16:53-story-zap-1",
-      "data": "2026-11-03",
-      "hora": "16:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/zap-1.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-04-06:53-story-bom-dia-2",
-      "data": "2026-11-04",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
@@ -276,8 +278,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-04-11:53-story-almoco",
-      "data": "2026-11-04",
+      "id": "2026-11-03-11:53-story-almoco",
+      "data": "2026-11-03",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
@@ -286,12 +288,42 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-04-16:53-story-zap-2",
-      "data": "2026-11-04",
+      "id": "2026-11-03-16:53-story-zap-2",
+      "data": "2026-11-03",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/zap-2.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-04-06:53-story-bom-dia-3",
+      "data": "2026-11-04",
+      "hora": "06:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/bom-dia-3.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-04-11:53-story-zap-3",
+      "data": "2026-11-04",
+      "hora": "11:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-3.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-04-16:53-story-zap-4",
+      "data": "2026-11-04",
+      "hora": "16:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-4.jpg"
       ],
       "status": "pendente"
     },
@@ -309,32 +341,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-05-06:53-story-bom-dia-3",
+      "id": "2026-11-05-06:53-story-bom-dia-1",
       "data": "2026-11-05",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-05-11:53-story-zap-3",
+      "id": "2026-11-05-11:53-story-dica-cenoura",
       "data": "2026-11-05",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-3.jpg"
+        "stories/banco/dica-cenoura.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-05-16:53-story-zap-4",
+      "id": "2026-11-05-16:53-story-zap-1",
       "data": "2026-11-05",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-4.jpg"
+        "stories/banco/zap-1.jpg"
       ],
       "status": "pendente"
     },
@@ -352,22 +384,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-06-06:53-story-bom-dia-1",
+      "id": "2026-11-06-06:53-story-bom-dia-2",
       "data": "2026-11-06",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-1.jpg"
+        "stories/banco/bom-dia-2.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-06-11:53-story-dica-cenoura",
+      "id": "2026-11-06-11:53-story-dica-morango",
       "data": "2026-11-06",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-cenoura.jpg"
+        "stories/banco/dica-morango.jpg"
       ],
       "status": "pendente"
     },
@@ -382,22 +414,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-07-06:53-story-bom-dia-2",
+      "id": "2026-11-07-06:53-story-bom-dia-3",
       "data": "2026-11-07",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-07-11:53-story-dica-morango",
+      "id": "2026-11-07-11:53-story-dica-alho",
       "data": "2026-11-07",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-morango.jpg"
+        "stories/banco/dica-alho.jpg"
       ],
       "status": "pendente"
     },
@@ -425,22 +457,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-08-06:53-story-bom-dia-3",
+      "id": "2026-11-08-06:53-story-bom-dia-1",
       "data": "2026-11-08",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-08-11:53-story-dica-alho",
+      "id": "2026-11-08-11:53-story-dica-melancia",
       "data": "2026-11-08",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-alho.jpg"
+        "stories/banco/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -455,32 +487,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-09-06:53-story-bom-dia-1",
+      "id": "2026-11-09-06:53-story-bom-dia-2",
       "data": "2026-11-09",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-1.jpg"
+        "stories/banco/bom-dia-2.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-09-11:53-story-dica-melancia",
+      "id": "2026-11-09-11:53-story-dica-cheiro-verde",
       "data": "2026-11-09",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-melancia.jpg"
+        "stories/banco/dica-cheiro-verde.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-09-16:53-story-zap-1",
+      "id": "2026-11-09-16:53-story-zap-2",
       "data": "2026-11-09",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-1.jpg"
+        "stories/banco/zap-2.jpg"
       ],
       "status": "pendente"
     },
@@ -498,38 +530,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-10-06:53-story-bom-dia-2",
+      "id": "2026-11-10-06:53-story-bom-dia-3",
       "data": "2026-11-10",
-      "hora": "06:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/bom-dia-2.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-10-11:53-story-dica-cheiro-verde",
-      "data": "2026-11-10",
-      "hora": "11:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/dica-cheiro-verde.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-10-16:53-story-zap-2",
-      "data": "2026-11-10",
-      "hora": "16:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/zap-2.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-11-06:53-story-bom-dia-3",
-      "data": "2026-11-11",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
@@ -538,8 +540,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-11-11:53-story-dica-tomate",
-      "data": "2026-11-11",
+      "id": "2026-11-10-11:53-story-dica-tomate",
+      "data": "2026-11-10",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
@@ -548,12 +550,42 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-11-16:53-story-zap-4",
-      "data": "2026-11-11",
+      "id": "2026-11-10-16:53-story-zap-4",
+      "data": "2026-11-10",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/zap-4.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-11-06:53-story-bom-dia-1",
+      "data": "2026-11-11",
+      "hora": "06:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/bom-dia-1.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-11-11:53-story-dica-banana",
+      "data": "2026-11-11",
+      "hora": "11:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/dica-banana.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-11-16:53-story-zap-1",
+      "data": "2026-11-11",
+      "hora": "16:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-1.jpg"
       ],
       "status": "pendente"
     },
@@ -571,32 +603,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-12-06:53-story-bom-dia-1",
+      "id": "2026-11-12-06:53-story-bom-dia-2",
       "data": "2026-11-12",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-1.jpg"
+        "stories/banco/bom-dia-2.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-12-11:53-story-dica-banana",
+      "id": "2026-11-12-11:53-story-dica-folhas",
       "data": "2026-11-12",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-banana.jpg"
+        "stories/banco/dica-folhas.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-12-16:53-story-zap-1",
+      "id": "2026-11-12-16:53-story-zap-2",
       "data": "2026-11-12",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-1.jpg"
+        "stories/banco/zap-2.jpg"
       ],
       "status": "pendente"
     },
@@ -614,22 +646,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-13-06:53-story-bom-dia-2",
+      "id": "2026-11-13-06:53-story-bom-dia-3",
       "data": "2026-11-13",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-13-11:53-story-dica-folhas",
+      "id": "2026-11-13-11:53-story-dica-manga",
       "data": "2026-11-13",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-folhas.jpg"
+        "stories/banco/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -644,22 +676,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-14-06:53-story-bom-dia-3",
+      "id": "2026-11-14-06:53-story-bom-dia-1",
       "data": "2026-11-14",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-14-11:53-story-dica-manga",
+      "id": "2026-11-14-11:53-story-dica-cebola",
       "data": "2026-11-14",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-manga.jpg"
+        "stories/banco/dica-cebola.jpg"
       ],
       "status": "pendente"
     },
@@ -687,22 +719,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-15-06:53-story-bom-dia-1",
+      "id": "2026-11-15-06:53-story-bom-dia-2",
       "data": "2026-11-15",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-1.jpg"
+        "stories/banco/bom-dia-2.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-15-11:53-story-dica-cebola",
+      "id": "2026-11-15-11:53-story-dica-limao",
       "data": "2026-11-15",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-cebola.jpg"
+        "stories/banco/dica-limao.jpg"
       ],
       "status": "pendente"
     },
@@ -717,32 +749,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-06:53-story-bom-dia-2",
+      "id": "2026-11-16-06:53-story-bom-dia-3",
       "data": "2026-11-16",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-11:53-story-dica-limao",
+      "id": "2026-11-16-11:53-story-dica-abacate",
       "data": "2026-11-16",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-limao.jpg"
+        "stories/banco/dica-abacate.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-16:53-story-zap-2",
+      "id": "2026-11-16-16:53-story-zap-4",
       "data": "2026-11-16",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-2.jpg"
+        "stories/banco/zap-4.jpg"
       ],
       "status": "pendente"
     },
@@ -760,38 +792,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-17-06:53-story-bom-dia-3",
+      "id": "2026-11-17-06:53-story-bom-dia-1",
       "data": "2026-11-17",
-      "hora": "06:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/bom-dia-3.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-17-11:53-story-dica-abacate",
-      "data": "2026-11-17",
-      "hora": "11:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/dica-abacate.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-17-16:53-story-zap-4",
-      "data": "2026-11-17",
-      "hora": "16:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/zap-4.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-18-06:53-story-bom-dia-1",
-      "data": "2026-11-18",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
@@ -800,8 +802,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-18-11:53-story-almoco",
-      "data": "2026-11-18",
+      "id": "2026-11-17-11:53-story-almoco",
+      "data": "2026-11-17",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
@@ -810,12 +812,42 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-18-16:53-story-zap-1",
-      "data": "2026-11-18",
+      "id": "2026-11-17-16:53-story-zap-1",
+      "data": "2026-11-17",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/zap-1.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-18-06:53-story-bom-dia-2",
+      "data": "2026-11-18",
+      "hora": "06:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/bom-dia-2.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-18-11:53-story-zap-3",
+      "data": "2026-11-18",
+      "hora": "11:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-3.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-18-16:53-story-zap-2",
+      "data": "2026-11-18",
+      "hora": "16:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-2.jpg"
       ],
       "status": "pendente"
     },
@@ -833,32 +865,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-19-06:53-story-bom-dia-2",
+      "id": "2026-11-19-06:53-story-bom-dia-3",
       "data": "2026-11-19",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-19-11:53-story-zap-3",
+      "id": "2026-11-19-11:53-story-dica-cenoura",
       "data": "2026-11-19",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-3.jpg"
+        "stories/banco/dica-cenoura.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-19-16:53-story-zap-2",
+      "id": "2026-11-19-16:53-story-zap-4",
       "data": "2026-11-19",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-2.jpg"
+        "stories/banco/zap-4.jpg"
       ],
       "status": "pendente"
     },
@@ -876,22 +908,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-20-06:53-story-bom-dia-3",
+      "id": "2026-11-20-06:53-story-bom-dia-1",
       "data": "2026-11-20",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-20-11:53-story-dica-cenoura",
+      "id": "2026-11-20-11:53-story-dica-morango",
       "data": "2026-11-20",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-cenoura.jpg"
+        "stories/banco/dica-morango.jpg"
       ],
       "status": "pendente"
     },
@@ -906,22 +938,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-21-06:53-story-bom-dia-1",
+      "id": "2026-11-21-06:53-story-bom-dia-2",
       "data": "2026-11-21",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-1.jpg"
+        "stories/banco/bom-dia-2.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-21-11:53-story-dica-morango",
+      "id": "2026-11-21-11:53-story-dica-alho",
       "data": "2026-11-21",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-morango.jpg"
+        "stories/banco/dica-alho.jpg"
       ],
       "status": "pendente"
     },
@@ -949,22 +981,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-22-06:53-story-bom-dia-2",
+      "id": "2026-11-22-06:53-story-bom-dia-3",
       "data": "2026-11-22",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-2.jpg"
+        "stories/banco/bom-dia-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-22-11:53-story-dica-alho",
+      "id": "2026-11-22-11:53-story-dica-melancia",
       "data": "2026-11-22",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-alho.jpg"
+        "stories/banco/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -979,32 +1011,32 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-23-06:53-story-bom-dia-3",
+      "id": "2026-11-23-06:53-story-bom-dia-1",
       "data": "2026-11-23",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/bom-dia-3.jpg"
+        "stories/banco/bom-dia-1.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-23-11:53-story-dica-melancia",
+      "id": "2026-11-23-11:53-story-dica-cheiro-verde",
       "data": "2026-11-23",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/dica-melancia.jpg"
+        "stories/banco/dica-cheiro-verde.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-23-16:53-story-zap-4",
+      "id": "2026-11-23-16:53-story-zap-1",
       "data": "2026-11-23",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/banco/zap-4.jpg"
+        "stories/banco/zap-1.jpg"
       ],
       "status": "pendente"
     },
@@ -1022,38 +1054,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-24-06:53-story-bom-dia-1",
+      "id": "2026-11-24-06:53-story-bom-dia-2",
       "data": "2026-11-24",
-      "hora": "06:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/bom-dia-1.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-24-11:53-story-dica-cheiro-verde",
-      "data": "2026-11-24",
-      "hora": "11:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/dica-cheiro-verde.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-24-16:53-story-zap-1",
-      "data": "2026-11-24",
-      "hora": "16:53",
-      "tipo": "story",
-      "imagens": [
-        "stories/banco/zap-1.jpg"
-      ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-25-06:53-story-bom-dia-2",
-      "data": "2026-11-25",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
@@ -1062,8 +1064,8 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-25-11:53-story-dica-tomate",
-      "data": "2026-11-25",
+      "id": "2026-11-24-11:53-story-dica-tomate",
+      "data": "2026-11-24",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
@@ -1072,12 +1074,42 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-25-16:53-story-zap-2",
-      "data": "2026-11-25",
+      "id": "2026-11-24-16:53-story-zap-2",
+      "data": "2026-11-24",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
         "stories/banco/zap-2.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-25-06:53-story-bom-dia-3",
+      "data": "2026-11-25",
+      "hora": "06:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/bom-dia-3.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-25-11:53-story-dica-banana",
+      "data": "2026-11-25",
+      "hora": "11:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/dica-banana.jpg"
+      ],
+      "status": "pendente"
+    },
+    {
+      "id": "2026-11-25-16:53-story-zap-4",
+      "data": "2026-11-25",
+      "hora": "16:53",
+      "tipo": "story",
+      "imagens": [
+        "stories/banco/zap-4.jpg"
       ],
       "status": "pendente"
     },

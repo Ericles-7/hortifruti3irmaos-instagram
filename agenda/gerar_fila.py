@@ -15,7 +15,7 @@ BASE_URL = "https://raw.githubusercontent.com/Ericles-7/hortifruti3irmaos-midia/
 # do repositório de mídia que trouxe o vídeo.
 BASE_VIDEO = "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-midia@{commit}/"
 
-INICIO = date(2026, 10, 28)
+INICIO = date(2026, 10, 27)
 FIM = date(2026, 11, 25)
 
 HORA_STORY = ["06:53", "11:53", "16:53"]
