@@ -13,7 +13,7 @@ Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (
 1. Atualizar o branch `claude/instagram-hortifruti-arts-xtrq1r`.
 2. Rodar `python3 agenda/postar.py pendentes`. A saída lista as postagens de **hoje** cujo horário já chegou e que ainda estão `pendente`. Se a lista vier vazia, encerrar.
 3. Publicar cada item da lista no Windsor.ai (`connector: instagram`, `account: 17841446253151662`):
-   - `story` → ação `create_story`, com `image_url` = `urls[0]`.
+   - `story` → ação `create_story`, com `image_url` = `urls[0]` (ou `video_url`, se o story for vídeo).
    - `carrossel` → ação `create_carousel_post`, com `image_urls` = `urls` e `caption` = `legenda`.
    - `reel` → ação `create_video_post`, com `video_url`, `cover_url`, `caption` = `legenda` e `share_to_feed` = true.
 4. Registrar o resultado:
@@ -29,6 +29,6 @@ Regras:
 ## Como mudar a programação
 
 - **Trocar uma legenda, uma data ou acrescentar posts:** editar `gerar_fila.py` e rodar `python3 agenda/gerar_fila.py`. Os itens já publicados continuam marcados como publicados.
-- **Novas artes:** colocar os `.jpg` no repositório e enviar para o branch antes do horário do post. A fila aponta para o endereço público do arquivo no GitHub.
+- **Novas artes:** as imagens e os vídeos publicados ficam no repositório **público** `Ericles-7/hortifruti3irmaos-midia` (branch `main`), com os mesmos caminhos usados na fila. Enviar o arquivo para lá antes do horário do post. Este repositório pode ser privado, porque o Instagram só baixa do repositório de mídia.
 - **Pausar um item:** trocar o `status` dele para `pausado` em `fila.json`.
-- **Reels:** os vídeos ficam em `reels/` e são programados em `REELS`, dentro de `gerar_fila.py`. O vídeo é servido pelo jsDelivr, fixado num commit: depois de enviar um vídeo novo, atualizar o `BASE_VIDEO` com o commit dele. O motivo é que o raw do GitHub entrega `.mp4` sem o tipo de vídeo. A capa vai pelo raw do GitHub, como as imagens. O vídeo precisa ter menos de 20 MB.
+- **Reels e stories em vídeo:** o vídeo vai para `reels/` no repositório de mídia e é programado em `REELS` ou `STORIES_VIDEO`, dentro de `gerar_fila.py`, com o `commit` do repositório de mídia que trouxe o vídeo. O vídeo é servido pelo jsDelivr, fixado nesse commit, porque o raw do GitHub entrega `.mp4` sem o tipo de vídeo. A capa vai pelo raw do GitHub, como as imagens. O vídeo precisa ter menos de 20 MB.

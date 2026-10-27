@@ -8,10 +8,12 @@ from datetime import date, timedelta
 from pathlib import Path
 
 FILA = Path(__file__).with_name("fila.json")
-BASE_URL = "https://raw.githubusercontent.com/Ericles-7/hortifruti3irmaos-instagram/claude/instagram-hortifruti-arts-xtrq1r/"
+# As artes ficam no repositório público hortifruti3irmaos-midia (o Instagram baixa de lá).
+BASE_URL = "https://raw.githubusercontent.com/Ericles-7/hortifruti3irmaos-midia/main/"
 
-# Vídeos vão pelo jsDelivr (serve como video/mp4, o raw do GitHub não), fixados num commit.
-BASE_VIDEO = "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-instagram@950863dff64a14e3288b715bd6f44293545536c4/"
+# Vídeos vão pelo jsDelivr (serve como video/mp4, o raw do GitHub não), fixados no commit
+# do repositório de mídia que trouxe o vídeo.
+BASE_VIDEO = "https://cdn.jsdelivr.net/gh/Ericles-7/hortifruti3irmaos-midia@{commit}/"
 
 INICIO = date(2026, 10, 28)
 FIM = date(2026, 11, 25)
@@ -135,8 +137,10 @@ FEED = {
         f"#DicaDaFeira {TAGS}"),
 }
 
-# Reels: {data: (vídeo, capa, legenda)}. O "Tour pela banca" (reels/) foi só um teste e não é publicado.
+# Reels e stories em vídeo: {data: [dict(hora, video, commit, ...)]}. Reel leva também capa e legenda.
+# O "Tour pela banca" (reels/) foi só um teste e não é publicado.
 REELS = {}
+STORIES_VIDEO = {}
 
 BOM_DIA = ["bom-dia-1", "bom-dia-2", "bom-dia-3"]
 DICAS = ["dica-tomate", "dica-banana", "dica-folhas", "dica-manga", "dica-cebola",
@@ -174,14 +178,12 @@ def gerar():
                 "imagens": [f"{nome}-{i}.jpg" for i in (1, 2, 3)],
                 "legenda": legenda,
             })
-        if dia in REELS:
-            video, capa, legenda = REELS[dia]
-            postagens.append({
-                "id": f"{dia}-{HORA_FEED}-reel-{Path(video).stem}",
-                "data": str(dia), "hora": HORA_FEED, "tipo": "reel",
-                "video": video, "capa": capa,
-                "legenda": legenda,
-            })
+        for tipo, extras in (("reel", REELS), ("story", STORIES_VIDEO)):
+            for r in extras.get(dia, []):
+                postagens.append({
+                    "id": f"{dia}-{r['hora']}-{tipo}-{Path(r['video']).stem}",
+                    "data": str(dia), "tipo": tipo, **r,
+                })
         dia += timedelta(days=1)
         n += 1
 

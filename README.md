@@ -2,6 +2,8 @@
 
 Artes publicadas no @hortifruti3irmaos_uirauna.
 
+As imagens e os vídeos que vão para o Instagram também ficam no repositório **público** [`hortifruti3irmaos-midia`](https://github.com/Ericles-7/hortifruti3irmaos-midia), de onde o Instagram baixa. Por isso este repositório pode ser privado.
+
 ## Cronograma semanal
 
 | Dia | Feed (carrossel) | Reels | Stories |
