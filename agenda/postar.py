@@ -1,17 +1,18 @@
 """Apoio à publicação automática da fila (agenda/fila.json).
 
-  python3 agenda/postar.py pendentes             # postagens de hoje já no horário e ainda pendentes (JSON)
+  python3 agenda/postar.py pendentes             # postagens pendentes cujo horário chegou há no máximo 90 min (JSON)
   python3 agenda/postar.py marcar <id> publicado <media_id>
   python3 agenda/postar.py marcar <id> erro "<mensagem>"
   python3 agenda/postar.py restantes             # dias de feed ainda programados
 """
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 FILA = Path(__file__).with_name("fila.json")
+ATRASO_MAXIMO = timedelta(minutes=90)  # depois disso o post perde a hora (ex.: "bom dia" à noite) e não sai
 
 
 def carregar():
@@ -24,10 +25,12 @@ def agora(fila):
 
 def pendentes():
     fila = carregar()
-    hoje, hora = agora(fila).strftime("%Y-%m-%d"), agora(fila).strftime("%H:%M")
+    fuso = ZoneInfo(fila["fuso"])
+    agora_ = agora(fila)
     saida = []
     for p in fila["postagens"]:
-        if p["status"] == "pendente" and p["data"] == hoje and p["hora"] <= hora:
+        quando = datetime.fromisoformat(f"{p['data']}T{p['hora']}").replace(tzinfo=fuso)
+        if p["status"] == "pendente" and quando <= agora_ <= quando + ATRASO_MAXIMO:
             if "video" in p:
                 item = {**p, "video_url": fila["base_video"].format(commit=p["commit"]) + p["video"]}
                 if "capa" in p:

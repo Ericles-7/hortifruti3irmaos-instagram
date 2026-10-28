@@ -1,6 +1,6 @@
 # Publicação automática
 
-Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (horário de Uiraúna) e publica no @hortifruti3irmaos_uirauna o que estiver vencido em `agenda/fila.json`. A publicação usa o conector Windsor.ai, na conta do Instagram `17841446253151662`.
+Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (horário de Uiraúna), com um reforço 25 min depois (**7h18, 12h18, 17h18 e 18h18**) para cobrir atraso ou falha, e publica no @hortifruti3irmaos_uirauna o que estiver vencido em `agenda/fila.json`. A publicação usa o conector Windsor.ai, na conta do Instagram `17841446253151662`.
 
 ## Arquivos
 
@@ -11,7 +11,7 @@ Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (
 ## Passo a passo de cada execução
 
 1. Atualizar o branch `claude/instagram-hortifruti-arts-xtrq1r`.
-2. Rodar `python3 agenda/postar.py pendentes`. A saída lista as postagens de **hoje** cujo horário já chegou e que ainda estão `pendente`. Se a lista vier vazia, encerrar.
+2. Rodar `python3 agenda/postar.py pendentes`. A saída lista as postagens `pendente` cujo horário chegou há **no máximo 90 min**. Passou disso, o post perde a hora e não sai (por exemplo, um "bom dia" à noite). Se a lista vier vazia, encerrar.
 3. Publicar cada item da lista no Windsor.ai (`connector: instagram`, `account: 17841446253151662`):
    - `story` → ação `create_story`, com `image_url` = `urls[0]` (ou `video_url`, se o story for vídeo).
    - `carrossel` → ação `create_carousel_post`, com `image_urls` = `urls` e `caption` = `legenda`.
