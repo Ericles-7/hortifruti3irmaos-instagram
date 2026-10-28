@@ -17,7 +17,7 @@ As imagens e os vídeos que vão para o Instagram também ficam no repositório 
 | Domingo | descanso (ou reaproveitar um post) | — | família ou fim de semana |
 
 - **Volume:** 4 carrosséis e 2 reels por semana; 3 stories por dia.
-- **Horários:** stories às 6h53, 11h53 e 16h53; feed e reels às 17h53. Ajustar pelas estatísticas do Instagram depois de algumas semanas.
+- **Horários:** tudo de manhã, quando a loja tem mais movimento: feed e 1º story às 6h53, stories às 8h53 e 10h53. Ajustar pelas estatísticas do Instagram depois de algumas semanas.
 - **Automação:** feed, reels e stories são publicados sozinhos a partir de `agenda/fila.json`. Veja `agenda/AUTOMACAO.md`.
 - **Stories:** as artes ficam em `stories/banco/`.
 

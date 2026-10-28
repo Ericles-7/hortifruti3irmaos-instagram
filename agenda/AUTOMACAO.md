@@ -1,6 +1,6 @@
 # Publicação automática
 
-Uma tarefa agendada do Claude roda todo dia às **6h53, 11h53, 16h53 e 17h53** (horário de Uiraúna), com um reforço 25 min depois (**7h18, 12h18, 17h18 e 18h18**) para cobrir atraso ou falha, e publica no @hortifruti3irmaos_uirauna o que estiver vencido em `agenda/fila.json`. A publicação usa o conector Windsor.ai, na conta do Instagram `17841446253151662`.
+Uma tarefa agendada do Claude roda todo dia às **6h53, 8h53 e 10h53** (horário de Uiraúna; desde 29/10 tudo sai de manhã), com um reforço 25 min depois (**7h18, 9h18 e 11h18**) para cobrir atraso ou falha, e publica no @hortifruti3irmaos_uirauna o que estiver vencido em `agenda/fila.json`. A publicação usa o conector Windsor.ai, na conta do Instagram `17841446253151662`.
 
 ## Arquivos
 

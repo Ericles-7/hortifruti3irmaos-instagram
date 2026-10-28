@@ -20,6 +20,16 @@ FIM = date(2026, 11, 25)
 
 HORA_STORY = ["06:53", "11:53", "16:53"]
 HORA_FEED = "17:53"
+# A partir de 29/10 tudo sai de manhã, quando a loja tem mais movimento (pedido do dono).
+MANHA_DESDE = date(2026, 10, 29)
+HORA_STORY_MANHA = ["06:53", "08:53", "10:53"]
+HORA_FEED_MANHA = "06:53"
+
+
+def horarios(dia):
+    if dia >= MANHA_DESDE:
+        return HORA_STORY_MANHA, HORA_FEED_MANHA
+    return HORA_STORY, HORA_FEED
 
 RODAPE = "📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna"
 TAGS = "#Uiraúna #Hortifruti3Irmãos #FeiraFresca"
@@ -197,7 +207,8 @@ def gerar():
     postagens = []
     dia, n = INICIO, 0
     while dia <= FIM:
-        for hora, nome in zip(HORA_STORY, stories_do_dia(n, dia)):
+        horas_story, hora_feed = horarios(dia)
+        for hora, nome in zip(horas_story, stories_do_dia(n, dia)):
             postagens.append({
                 "id": f"{dia}-{hora}-story-{nome}",
                 "data": str(dia), "hora": hora, "tipo": "story",
@@ -206,8 +217,8 @@ def gerar():
         if dia in FEED:
             nome, legenda = FEED[dia]
             postagens.append({
-                "id": f"{dia}-{HORA_FEED}-carrossel-{nome}",
-                "data": str(dia), "hora": HORA_FEED, "tipo": "carrossel",
+                "id": f"{dia}-{hora_feed}-carrossel-{nome}",
+                "data": str(dia), "hora": hora_feed, "tipo": "carrossel",
                 "imagens": [f"{nome}-{i}.jpg" for i in (1, 2, 3)],
                 "legenda": legenda,
             })
