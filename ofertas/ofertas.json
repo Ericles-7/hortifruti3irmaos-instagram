@@ -1,0 +1,18 @@
+{
+  "faixa": ["Ofertaço da", "semana!!!"],
+  "validade": "29/10 a 01/11",
+  "produtos": [
+    {"nome": "Manga", "unidade": "KG", "preco": "0,00", "foto": "manga.jpg"},
+    {"nome": "Manga Coité", "unidade": "KG", "preco": "0,00", "foto": "manga-coite.jpg"},
+    {"nome": "Melancia", "unidade": "KG", "preco": "0,00", "foto": "melancia.jpg"},
+    {"nome": "Laranja", "unidade": "KG", "preco": "0,00", "foto": "laranja.jpg"},
+    {"nome": "Tangerina", "unidade": "KG", "preco": "0,00", "foto": "tangerina.jpg"},
+    {"nome": "Limão", "unidade": "KG", "preco": "0,00", "foto": "limao.jpg"},
+    {"nome": "Tomate", "unidade": "KG", "preco": "0,00", "foto": "tomate.jpg"},
+    {"nome": "Cebola Roxa", "unidade": "KG", "preco": "0,00", "foto": "cebola.jpg"},
+    {"nome": "Batata", "unidade": "KG", "preco": "0,00", "foto": "batata.jpg"},
+    {"nome": "Abacaxi", "unidade": "UND", "preco": "0,00", "foto": "abacaxi.jpg"},
+    {"nome": "Melão", "unidade": "KG", "preco": "0,00", "foto": "melao.jpg"},
+    {"nome": "Rapadura de Gergelim", "unidade": "UND", "preco": "0,00", "foto": "rapadura.jpg"}
+  ]
+}
