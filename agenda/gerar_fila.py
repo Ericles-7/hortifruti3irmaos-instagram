@@ -165,11 +165,27 @@ DICAS = ["dica-tomate", "dica-banana", "dica-folhas", "dica-manga", "dica-cebola
 ZAP = ["zap-1", "zap-2", "zap-4"]  # zap-3 ("faltou fruta pro almoço?") vai com as dicas, ao meio-dia
 
 
+# A partir de 29/10 os stories usam fotos reais (stories/fotos, gerados por reels/story_produto.py)
+# em vez das ilustrações (stories/banco); só entram dicas de produtos que têm foto.
+FOTOS_DESDE = date(2026, 10, 29)
+DICAS_FOTO = ["dica-tomate", "dica-abacaxi", "dica-manga", "dica-cebola", "dica-limao", "almoco", "zap-3",
+              "dica-abacate", "dica-melancia", "dica-laranja", "dica-batata", "dica-melao"]
+
+
+def story_imagem(nome, dia):
+    """Versão com foto quando existe (a partir de 28/10, quando o dono pediu); senão a ilustrada."""
+    foto = f"stories/fotos/{nome}.jpg"
+    if dia >= date(2026, 10, 28) and (Path(__file__).parent.parent / foto).exists():
+        return foto
+    return f"stories/banco/{nome}.jpg"
+
+
 def stories_do_dia(n, dia):
     """Os 3 stories do dia: bom dia, dica e chamada (zap / fim de semana / endereço / família)."""
     tarde = {4: "fim-de-semana", 5: "endereco", 6: f"familia-{n // 7 % 2 + 1}"}.get(
         dia.weekday(), ZAP[n % len(ZAP)])
-    return [BOM_DIA[n % len(BOM_DIA)], DICAS[n % len(DICAS)], tarde]
+    dicas = DICAS_FOTO if dia >= FOTOS_DESDE else DICAS
+    return [BOM_DIA[n % len(BOM_DIA)], dicas[n % len(dicas)], tarde]
 
 
 def gerar():
@@ -184,7 +200,7 @@ def gerar():
             postagens.append({
                 "id": f"{dia}-{hora}-story-{nome}",
                 "data": str(dia), "hora": hora, "tipo": "story",
-                "imagens": [f"stories/banco/{nome}.jpg"],
+                "imagens": [story_imagem(nome, dia)],
             })
         if dia in FEED:
             nome, legenda = FEED[dia]
