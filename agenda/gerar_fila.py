@@ -140,11 +140,11 @@ FEED = {
 # Reels e stories em vídeo: {data: [dict(hora, video, commit, ...)]}. Reel leva também capa e legenda.
 # O "Tour pela banca" (reels/) foi só um teste e não é publicado.
 # "status": "aguardando" segura o post até o dono aprovar (aí vira "pendente" no fila.json).
+# Manga coité: aprovada pelo dono em 27/10.
 MANGA = "01014f7f1d544ee17e37d548a38b3fd3b92aa9bb"  # commit do hortifruti3irmaos-midia com o vídeo
 REELS = {
     date(2026, 10, 28): [dict(
         hora="06:53", video="reels/manga-coite.mp4", capa="reels/manga-coite-capa.jpg", commit=MANGA,
-        status="aguardando",
         legenda="CHEGOU MANGA COITÉ! 🥭💚\n"
         "Caixa cheia de manga verdinha e fresquinha aqui no Hortifruti 3 Irmãos. Pra suco, pra sobremesa "
         "ou pra comer na hora: é manga que não acaba!\n"
@@ -155,7 +155,7 @@ REELS = {
     )],
 }
 STORIES_VIDEO = {
-    date(2026, 10, 28): [dict(hora="06:53", video="reels/manga-coite.mp4", commit=MANGA, status="aguardando")],
+    date(2026, 10, 28): [dict(hora="06:53", video="reels/manga-coite.mp4", commit=MANGA)],
 }
 
 BOM_DIA = ["bom-dia-1", "bom-dia-2", "bom-dia-3"]
