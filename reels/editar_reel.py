@@ -34,8 +34,9 @@ INSTAGRAM = "@hortifruti3irmaos_uirauna"
 
 APROXIMA = 1.12  # leve aproximação para o produto encher a tela
 
-# Cada projeto: o texto do gancho e as cenas do vídeo bruto, como
-# (início em s, duração em batidas, texto[, zoom, centro x, centro y]). A 1ª cena é o gancho.
+# Cada projeto: o texto do gancho e as cenas, como
+# (início em s no vídeo bruto ou foto em reels/fotos, duração em batidas, texto[, zoom, centro x, centro y]).
+# A 1ª cena é o gancho.
 # As cenas somam compassos inteiros (4 batidas); a assinatura final ocupa mais 8 batidas.
 # "soco": cada cena entra com um zoom rápido que assenta (mais energia, para divulgação).
 PROJETOS = {
@@ -67,6 +68,31 @@ PROJETOS = {
             (13.2, 3, "Garanta a sua!"),
         ],
         compassos=["C", "G", "Am", "F", "C", "F", "G", "C"],
+        soco=True,
+    ),
+    "rapadura": dict(  # rapadura de gergelim (fotos + reels/brutos/rapadura.mp4)
+        gancho="Chegou rapadura\nno Hortifruti 3 Irmãos!",
+        cenas=[
+            ("fotos/rapadura-pilha.jpg", 4, None),
+            ("fotos/rapadura-gergelim.jpg", 3, "de gergelim..."),
+            ("fotos/rapadura-garrafas.jpg", 3, "pra adoçar o café..."),
+            (11.0, 3, "ou comer\ncom farinha!"),
+            (16.0, 3, "Garanta a sua!"),
+        ],
+        compassos=["C", "G", "Am", "F", "G", "C"],
+        soco=True,
+    ),
+    "manga": dict(  # mangas (fotos + reels/brutos/manga.mp4)
+        gancho="Tem manga de\ntodo jeito no\nHortifruti 3 Irmãos!",
+        cenas=[
+            (0.0, 4, None),
+            ("fotos/manga-colorida.jpg", 3, "madurinha..."),
+            ("fotos/manga-coite.jpg", 3, "coité..."),
+            (11.0, 2, "pra suco..."),
+            (13.0, 2, "pra comer na hora..."),
+            (17.3, 2, "Garanta a sua!"),
+        ],
+        compassos=["C", "G", "Am", "F", "G", "C"],
         soco=True,
     ),
 }
@@ -297,6 +323,21 @@ def enquadrar(quadros, zoom, cx, cy, soco):
             f":y='max(0,min(ih-ih/zoom,ih*{cy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
 
 
+COR = ("eq=saturation=1.28:contrast=1.07:brightness=0.035:gamma=0.97,"
+       "vibrance=intensity=0.15,unsharp=5:5:0.6")
+
+
+def cena_foto(foto, quadros, i, soco, saida):
+    """Foto vira cena: preenche a tela e ganha um zoom lento (alternando para dentro e para fora)."""
+    z = f"1.02+0.07*on/{quadros}" if i % 2 == 0 else f"1.09-0.07*on/{quadros}"
+    if soco:
+        z = f"({z})*(1+0.14*max(0,1-on/6))"
+    ffmpeg("-loop", "1", "-i", str(PASTA / foto), "-vf",
+           f"scale={2 * W}:{2 * H}:force_original_aspect_ratio=increase:flags=lanczos,crop={2 * W}:{2 * H},"
+           f"zoompan=z='{z}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s={W}x{H}:fps={FPS},{COR}",
+           "-frames:v", str(quadros), *X264, "-crf", "15", str(saida))
+
+
 def main(projeto, bruto):
     proj = PROJETOS[projeto]
     cenas = proj["cenas"]
@@ -310,9 +351,7 @@ def main(projeto, bruto):
     ffmpeg("-i", bruto, "-an", "-vf",
            f"vidstabtransform=input={trf}:smoothing=30:zoom=5:optzoom=0,"
            f"scale={round(W * APROXIMA / 2) * 2}:{round(H * APROXIMA / 2) * 2}:flags=lanczos,crop={W}:{H},"
-           "eq=saturation=1.28:contrast=1.07:brightness=0.035:gamma=0.97,"
-           "vibrance=intensity=0.15,unsharp=5:5:0.6",
-           *X264, "-crf", "15", str(base))
+           f"{COR}", *X264, "-crf", "15", str(base))
 
     # 2) cenas em corte seco, no tamanho exato em batidas; a assinatura entra depois por cima
     camadas = Camadas(proj["gancho"], cenas)
@@ -320,11 +359,14 @@ def main(projeto, bruto):
     for i, (ini, batidas, _, *enq) in enumerate(cenas):
         quadros = round(batidas * BATIDA * FPS)
         parte = tmp / f"cena{i}.mp4"
+        partes.append(parte)
+        if isinstance(ini, str):  # foto (caminho relativo a reels/)
+            cena_foto(ini, quadros, i, proj.get("soco", False), parte)
+            continue
         zoom, cx, cy = (enq + [1, 0.5, 0.5][len(enq):]) if enq else (1, 0.5, 0.5)
         vf = enquadrar(quadros, zoom, cx, cy, proj.get("soco", False))
         ffmpeg("-ss", f"{ini:.3f}", "-i", str(base), *(["-vf", vf] if vf else []),
                "-frames:v", str(quadros), *X264, "-crf", "15", str(parte))
-        partes.append(parte)
     lista = tmp / "lista.txt"
     lista.write_text("".join(f"file '{p}'\n" for p in partes))
     corpo = tmp / "corpo.mp4"
