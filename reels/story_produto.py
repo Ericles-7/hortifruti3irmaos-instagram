@@ -1,7 +1,7 @@
 """Stories com foto (1080x1920): foto real em destaque, etiqueta, título no estilo dos reels e o Zap.
 
 Uso: python3 reels/story_produto.py [nome ...]   (sem nome, gera todos)
-Grava stories/fotos/<nome>.jpg. As fotos vêm de reels/fotos e ofertas/fotos.
+Grava stories/fotos/<nome>.jpg. As fotos vêm de reels/fotos.
 """
 import sys
 from pathlib import Path
@@ -13,53 +13,36 @@ from editar_reel import (AMARELO, BRANCO, INSTAGRAM, VERDE, VERDE_CLARO, VERDE_E
 
 RAIZ = Path(__file__).parent.parent
 SAIDA = RAIZ / "stories" / "fotos"
-R, O = "reels/fotos/", "ofertas/fotos/"
+R = "reels/fotos/"
 
 # nome: (foto, etiqueta, título (\n quebra a linha), texto)
 STORIES = {
+    # Só fotos aprovadas pelo dono (melancia, mangas e rapadura); o resto entra quando ele fotografar.
     # bom dia
-    "bom-dia-1": (O + "caixas.jpg", "BOM DIA, UIRAÚNA!", "Mercadoria\nfresquinha",
+    "bom-dia-1": (R + "manga-coite.jpg", "BOM DIA, UIRAÚNA!", "Mercadoria\nfresquinha",
                   "Já estamos separando os pedidos. Manda a sua lista no Zap!"),
-    "bom-dia-2": (O + "tomate.jpg", "BOM DIA!", "Feira boa\ncomeça cedo",
+    "bom-dia-2": (R + "melancia-2.jpg", "BOM DIA!", "Feira boa\ncomeça cedo",
                   "Frutas, verduras e legumes escolhidos a dedo pra você."),
     "bom-dia-3": (R + "manga-colorida.jpg", "BOM DIA!", "Hoje tem\ncoisa boa",
                   "Vem conferir na loja ou peça sem sair de casa."),
-    # dicas (só as que têm foto real)
-    "dica-tomate": (O + "tomate.jpg", "DICA RÁPIDA", "Tomate\nfora da geladeira",
-                    "Deixe amadurecer em temperatura ambiente; maduro, use logo."),
+    # dicas
     "dica-manga": (R + "manga-colorida.jpg", "DICA RÁPIDA", "Manga\ndoce e no ponto",
                    "Amadureça fora da geladeira e depois guarde nela."),
-    "dica-cebola": (O + "cebola.jpg", "DICA RÁPIDA", "Cebola e batata\nseparadas",
-                    "Guarde em lugar seco, escuro e arejado, uma longe da outra."),
-    "dica-limao": (O + "limao.jpg", "DICA RÁPIDA", "Limão\ndura mais",
-                   "Guarde na geladeira dentro de um saco ou pote fechado."),
-    "dica-abacate": (O + "abacate.jpg", "DICA RÁPIDA", "Abacate\nno ponto certo",
-                     "Pra amadurecer, deixe fora da geladeira; maduro, guarde nela."),
     "dica-melancia": (R + "melancia-1.jpg", "DICA RÁPIDA", "Melancia\ncortada",
                       "Cubra bem e guarde na geladeira; consuma em poucos dias."),
-    "dica-abacaxi": (O + "abacaxi.jpg", "DICA RÁPIDA", "Abacaxi\nno ponto",
-                     "Casca amarelando e cheiro doce na base: tá pronto pra comer."),
-    "dica-melao": (O + "melao.jpg", "DICA RÁPIDA", "Melão\nmaduro",
-                   "Cheiro doce perto do cabo e casca que cede um pouquinho."),
-    "dica-laranja": (O + "laranja.jpg", "DICA RÁPIDA", "Laranja\nsuculenta",
-                     "Escolha as mais pesadas pro tamanho: têm mais suco."),
-    "dica-batata": (O + "batata.jpg", "DICA RÁPIDA", "Batata\nsem brotar",
-                    "Guarde no escuro e longe da cebola; nada de geladeira."),
+    "dica-rapadura": (R + "rapadura-gergelim.jpg", "DICA RÁPIDA", "Rapadura\nsempre boa",
+                      "Guarde em pote fechado, longe da umidade, que ela não mela."),
     # meio-dia e tarde
-    "almoco": (O + "tomate.jpg", "HORA DO ALMOÇO", "Salada\nfresquinha?",
-               "Alface, tomate, pepino e cebola separados pra você. Chama no Zap!"),
-    "zap-1": (O + "laranja.jpg", "PEÇA PELO ZAP", "Fez a lista?\nA gente separa!",
+    "zap-1": (R + "rapadura-pilha.jpg", "PEÇA PELO ZAP", "Fez a lista?\nA gente separa!",
               "Mande sua lista e receba em casa ou retire na loja."),
-    "zap-2": (O + "tangerina.jpg", "SEM FILA", "Sua feira\nsem sair de casa",
+    "zap-2": (R + "melancia-2.jpg", "SEM FILA", "Sua feira\nsem sair de casa",
               "É só chamar no WhatsApp que a gente leva até você."),
-    "zap-3": (O + "melao.jpg", "ESQUECEU ALGO?", "Faltou fruta\npro almoço?",
+    "zap-3": (R + "manga-colorida.jpg", "ESQUECEU ALGO?", "Faltou fruta\npro almoço?",
               "Chama no Zap que a gente resolve rapidinho."),
     "zap-4": (R + "manga-coite.jpg", "ENTREGA EM CASA", "A gente leva\naté você",
               "Frutas, verduras e legumes na sua porta, em Uiraúna."),
-    "fim-de-semana": (O + "abacaxi.jpg", "FIM DE SEMANA", "Já fez a feira\ndo fim de semana?",
+    "fim-de-semana": (R + "rapadura-garrafas.jpg", "FIM DE SEMANA", "Já fez a feira\ndo fim de semana?",
                       "Garanta frutas e verduras fresquinhas pro seu sábado."),
-    "endereco": (O + "corredor.jpg", "ONDE ESTAMOS", "Venha nos\nvisitar!",
-                 "Rua Francisco Euclides Fernandes, 1200 · Uiraúna - PB"),
     "familia-1": (R + "rapadura-pilha.jpg", "NEGÓCIO DE FAMÍLIA", "Escolhido\ncom carinho",
                   "Cada item passa pelas mãos da nossa família."),
     "familia-2": (R + "melancia-3.jpg", "OBRIGADO!", "Valeu pela\npreferência",

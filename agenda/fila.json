@@ -110,12 +110,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-29-11:53-story-dica-manga",
+      "id": "2026-10-29-11:53-story-dica-melancia",
       "data": "2026-10-29",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -153,12 +153,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-30-11:53-story-dica-cebola",
+      "id": "2026-10-30-11:53-story-zap-3",
       "data": "2026-10-30",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-cebola.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
@@ -183,22 +183,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-31-11:53-story-dica-limao",
+      "id": "2026-10-31-11:53-story-dica-manga",
       "data": "2026-10-31",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-limao.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-31-16:53-story-endereco",
+      "id": "2026-10-31-16:53-story-zap-2",
       "data": "2026-10-31",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/endereco.jpg"
+        "stories/fotos/zap-2.jpg"
       ],
       "status": "pendente"
     },
@@ -226,12 +226,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-01-11:53-story-almoco",
+      "id": "2026-11-01-11:53-story-dica-rapadura",
       "data": "2026-11-01",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/almoco.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },
@@ -256,12 +256,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-11:53-story-zap-3",
+      "id": "2026-11-02-11:53-story-dica-melancia",
       "data": "2026-11-02",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/zap-3.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -299,12 +299,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-03-11:53-story-dica-abacate",
+      "id": "2026-11-03-11:53-story-zap-3",
       "data": "2026-11-03",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-abacate.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
@@ -329,12 +329,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-04-11:53-story-dica-melancia",
+      "id": "2026-11-04-11:53-story-dica-manga",
       "data": "2026-11-04",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melancia.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -372,12 +372,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-05-11:53-story-dica-laranja",
+      "id": "2026-11-05-11:53-story-dica-rapadura",
       "data": "2026-11-05",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-laranja.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },
@@ -415,12 +415,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-06-11:53-story-dica-batata",
+      "id": "2026-11-06-11:53-story-dica-melancia",
       "data": "2026-11-06",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-batata.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -445,22 +445,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-07-11:53-story-dica-melao",
+      "id": "2026-11-07-11:53-story-zap-3",
       "data": "2026-11-07",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melao.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-07-16:53-story-endereco",
+      "id": "2026-11-07-16:53-story-zap-4",
       "data": "2026-11-07",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/endereco.jpg"
+        "stories/fotos/zap-4.jpg"
       ],
       "status": "pendente"
     },
@@ -488,12 +488,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-08-11:53-story-dica-tomate",
+      "id": "2026-11-08-11:53-story-dica-manga",
       "data": "2026-11-08",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-tomate.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -518,12 +518,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-09-11:53-story-dica-abacaxi",
+      "id": "2026-11-09-11:53-story-dica-rapadura",
       "data": "2026-11-09",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-abacaxi.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },
@@ -561,12 +561,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-10-11:53-story-dica-manga",
+      "id": "2026-11-10-11:53-story-dica-melancia",
       "data": "2026-11-10",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -591,12 +591,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-11-11:53-story-dica-cebola",
+      "id": "2026-11-11-11:53-story-zap-3",
       "data": "2026-11-11",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-cebola.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
@@ -634,12 +634,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-12-11:53-story-dica-limao",
+      "id": "2026-11-12-11:53-story-dica-manga",
       "data": "2026-11-12",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-limao.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -677,12 +677,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-13-11:53-story-almoco",
+      "id": "2026-11-13-11:53-story-dica-rapadura",
       "data": "2026-11-13",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/almoco.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },
@@ -707,22 +707,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-14-11:53-story-zap-3",
+      "id": "2026-11-14-11:53-story-dica-melancia",
       "data": "2026-11-14",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/zap-3.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-14-16:53-story-endereco",
+      "id": "2026-11-14-16:53-story-zap-1",
       "data": "2026-11-14",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/endereco.jpg"
+        "stories/fotos/zap-1.jpg"
       ],
       "status": "pendente"
     },
@@ -750,12 +750,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-15-11:53-story-dica-abacate",
+      "id": "2026-11-15-11:53-story-zap-3",
       "data": "2026-11-15",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-abacate.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
@@ -780,12 +780,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-11:53-story-dica-melancia",
+      "id": "2026-11-16-11:53-story-dica-manga",
       "data": "2026-11-16",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melancia.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -823,12 +823,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-17-11:53-story-dica-laranja",
+      "id": "2026-11-17-11:53-story-dica-rapadura",
       "data": "2026-11-17",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-laranja.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },
@@ -853,12 +853,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-18-11:53-story-dica-batata",
+      "id": "2026-11-18-11:53-story-dica-melancia",
       "data": "2026-11-18",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-batata.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -896,12 +896,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-19-11:53-story-dica-melao",
+      "id": "2026-11-19-11:53-story-zap-3",
       "data": "2026-11-19",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melao.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
@@ -939,12 +939,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-20-11:53-story-dica-tomate",
+      "id": "2026-11-20-11:53-story-dica-manga",
       "data": "2026-11-20",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-tomate.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -969,22 +969,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-21-11:53-story-dica-abacaxi",
+      "id": "2026-11-21-11:53-story-dica-rapadura",
       "data": "2026-11-21",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-abacaxi.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-21-16:53-story-endereco",
+      "id": "2026-11-21-16:53-story-zap-2",
       "data": "2026-11-21",
       "hora": "16:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/endereco.jpg"
+        "stories/fotos/zap-2.jpg"
       ],
       "status": "pendente"
     },
@@ -1012,12 +1012,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-22-11:53-story-dica-manga",
+      "id": "2026-11-22-11:53-story-dica-melancia",
       "data": "2026-11-22",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/dica-melancia.jpg"
       ],
       "status": "pendente"
     },
@@ -1042,12 +1042,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-23-11:53-story-dica-cebola",
+      "id": "2026-11-23-11:53-story-zap-3",
       "data": "2026-11-23",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-cebola.jpg"
+        "stories/fotos/zap-3.jpg"
       ],
       "status": "pendente"
     },
@@ -1085,12 +1085,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-24-11:53-story-dica-limao",
+      "id": "2026-11-24-11:53-story-dica-manga",
       "data": "2026-11-24",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-limao.jpg"
+        "stories/fotos/dica-manga.jpg"
       ],
       "status": "pendente"
     },
@@ -1115,12 +1115,12 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-25-11:53-story-almoco",
+      "id": "2026-11-25-11:53-story-dica-rapadura",
       "data": "2026-11-25",
       "hora": "11:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/almoco.jpg"
+        "stories/fotos/dica-rapadura.jpg"
       ],
       "status": "pendente"
     },

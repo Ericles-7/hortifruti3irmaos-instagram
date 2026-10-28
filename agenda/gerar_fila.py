@@ -168,8 +168,7 @@ ZAP = ["zap-1", "zap-2", "zap-4"]  # zap-3 ("faltou fruta pro almoço?") vai com
 # A partir de 29/10 os stories usam fotos reais (stories/fotos, gerados por reels/story_produto.py)
 # em vez das ilustrações (stories/banco); só entram dicas de produtos que têm foto.
 FOTOS_DESDE = date(2026, 10, 29)
-DICAS_FOTO = ["dica-tomate", "dica-abacaxi", "dica-manga", "dica-cebola", "dica-limao", "almoco", "zap-3",
-              "dica-abacate", "dica-melancia", "dica-laranja", "dica-batata", "dica-melao"]
+DICAS_FOTO = ["dica-manga", "dica-rapadura", "dica-melancia", "zap-3"]
 
 
 def story_imagem(nome, dia):
@@ -182,7 +181,9 @@ def story_imagem(nome, dia):
 
 def stories_do_dia(n, dia):
     """Os 3 stories do dia: bom dia, dica e chamada (zap / fim de semana / endereço / família)."""
-    tarde = {4: "fim-de-semana", 5: "endereco", 6: f"familia-{n // 7 % 2 + 1}"}.get(
+    # sábado: endereço (ilustrado) só até ter a foto da fachada
+    sabado = "endereco" if dia < FOTOS_DESDE else ZAP[n % len(ZAP)]
+    tarde = {4: "fim-de-semana", 5: sabado, 6: f"familia-{n // 7 % 2 + 1}"}.get(
         dia.weekday(), ZAP[n % len(ZAP)])
     dicas = DICAS_FOTO if dia >= FOTOS_DESDE else DICAS
     return [BOM_DIA[n % len(BOM_DIA)], dicas[n % len(dicas)], tarde]
