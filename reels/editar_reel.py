@@ -1,7 +1,7 @@
-"""Edita o vídeo bruto da banca no reel "Tour pela banca" (1080x1920).
+"""Edita um vídeo bruto da banca num reel (1080x1920) no modelo de edição abaixo.
 
-Uso: python3 reels/editar_reel.py <video_bruto.mp4>
-Gera reels/tour-banca.mp4 e reels/tour-banca-capa.jpg.
+Uso: python3 reels/editar_reel.py <projeto> <video_bruto.mp4>
+Gera reels/<projeto>.mp4 e reels/<projeto>-capa.jpg. Os projetos (cenas e textos) estão em PROJETOS.
 
 Modelo de edição (referência: reels de hortifruti com produto em destaque a cada ~2 s):
 gancho em plano aberto com toque na tela e texto que "pula"; depois uma cena por produto, em
@@ -21,8 +21,6 @@ import musica
 PASTA = Path(__file__).parent
 FONTE = PASTA / "fonts" / "Nunito.ttf"
 LOGO = PASTA / "logo.png"
-SAIDA = PASTA / "tour-banca.mp4"
-CAPA = PASTA / "tour-banca-capa.jpg"
 
 W, H, FPS = 1080, 1920, 30
 LARANJA = (255, 106, 0)
@@ -34,23 +32,45 @@ BRANCO = (255, 255, 255)
 BATIDA = musica.BATIDA
 INSTAGRAM = "@hortifruti3irmaos_uirauna"
 
-GANCHO = "Aqui no Hortifruti\n3 Irmãos você encontra..."
-# Cenas do vídeo bruto: (início em s, duração em batidas, texto). A 1ª é o gancho.
-# Somam 36 batidas (9 compassos); a assinatura final ocupa mais 8.
-CENAS = [
-    (26.0, 4, None),  # plano aberto do corredor
-    (0.0, 4, "laranja..."),
-    (4.9, 4, "maracujá e batata..."),
-    (7.1, 4, "cebola..."),
-    (9.95, 3, "tomate..."),
-    (12.4, 3, "abacaxi..."),
-    (14.8, 3, "melão..."),
-    (18.3, 3, "abacate..."),
-    (20.0, 3, "tangerina..."),
-    (22.0, 5, "e muito mais!"),
-]
-BATIDAS_FIM = 8
 APROXIMA = 1.12  # leve aproximação para o produto encher a tela
+
+# Cada projeto: o texto do gancho e as cenas do vídeo bruto, como
+# (início em s, duração em batidas, texto[, zoom, centro x, centro y]). A 1ª cena é o gancho.
+# As cenas somam compassos inteiros (4 batidas); a assinatura final ocupa mais 8 batidas.
+# "soco": cada cena entra com um zoom rápido que assenta (mais energia, para divulgação).
+PROJETOS = {
+    "tour-banca": dict(
+        gancho="Aqui no Hortifruti\n3 Irmãos você encontra...",
+        cenas=[
+            (26.0, 4, None),  # plano aberto do corredor
+            (0.0, 4, "laranja..."),
+            (4.9, 4, "maracujá e batata..."),
+            (7.1, 4, "cebola..."),
+            (9.95, 3, "tomate..."),
+            (12.4, 3, "abacaxi..."),
+            (14.8, 3, "melão..."),
+            (18.3, 3, "abacate..."),
+            (20.0, 3, "tangerina..."),
+            (22.0, 5, "e muito mais!"),
+        ],
+    ),
+    "manga-coite": dict(  # divulgação da chegada da manga coité (vídeo das caixas, 15 s)
+        gancho="Chegou manga coité\nno Hortifruti 3 Irmãos!",
+        cenas=[
+            (12.4, 4, None),  # caixas e mais caixas
+            (0.0, 4, "caixa cheia..."),
+            (1.4, 3, "verdinha e\nfresquinha...", 1.3, 0.5, 0.45),
+            (8.2, 3, "é manga que\nnão acaba!"),
+            (13.0, 2, "pra suco...", 1.3, 0.4, 0.6),
+            (0.5, 2, "pra sobremesa...", 1.35, 0.55, 0.4),
+            (8.5, 3, "ou pra comer na hora!", 1.25, 0.5, 0.55),
+            (13.2, 3, "Garanta a sua!"),
+        ],
+        compassos=["C", "G", "Am", "F", "C", "F", "G", "C"],
+        soco=True,
+    ),
+}
+BATIDAS_FIM = 8
 
 
 def fonte(tamanho, peso="Black"):
@@ -140,17 +160,17 @@ def fundo_gradiente(topo, baixo):
 class Camadas:
     """Desenha, quadro a quadro, tudo o que vai por cima do vídeo (textos e assinatura final)."""
 
-    def __init__(self):
+    def __init__(self, gancho, cenas):
         self.inicios = []
         t = 0.0
-        for _, batidas, _ in CENAS:
+        for _, batidas, *_ in cenas:
             self.inicios.append(t)
             t += batidas * BATIDA
         self.inicio_fim = t
         self.total = t + BATIDAS_FIM * BATIDA
-        self.gancho = texto_destaque(GANCHO, 80)
+        self.gancho = texto_destaque(gancho, 80)
         self.icone = icone_logo(110)
-        self.textos = [texto_destaque(txt) if txt else None for _, _, txt in CENAS]
+        self.textos = [texto_destaque(c[2]) if c[2] else None for c in cenas]
         self.marca = self._marca_dagua()
         self.fundo_claro = fundo_gradiente((70, 160, 50), (40, 120, 36))
         self.fundo_escuro = fundo_gradiente((24, 70, 26), VERDE_ESCURO)
@@ -267,7 +287,20 @@ def duracao(video):
 X264 = ["-c:v", "libx264", "-preset", "slow", "-pix_fmt", "yuv420p", "-r", str(FPS)]
 
 
-def main(bruto):
+def enquadrar(quadros, zoom, cx, cy, soco):
+    """Aproximação da cena (zoom num ponto do quadro) e, com "soco", entrada com zoom rápido."""
+    if zoom == 1 and not soco:
+        return None
+    z = f"{zoom}*(1+0.14*max(0,1-on/6))" if soco else str(zoom)
+    return (f"scale={2 * W}:{2 * H}:flags=lanczos,"
+            f"zoompan=z='{z}':x='max(0,min(iw-iw/zoom,iw*{cx}-iw/zoom/2))'"
+            f":y='max(0,min(ih-ih/zoom,ih*{cy}-ih/zoom/2))':d=1:s={W}x{H}:fps={FPS}")
+
+
+def main(projeto, bruto):
+    proj = PROJETOS[projeto]
+    cenas = proj["cenas"]
+    saida, capa = PASTA / f"{projeto}.mp4", PASTA / f"{projeto}-capa.jpg"
     tmp = Path(tempfile.mkdtemp())
 
     # 1) estabiliza, corrige a cor (claro, saturado e limpo) e leva para 1080x1920
@@ -282,12 +315,15 @@ def main(bruto):
            *X264, "-crf", "15", str(base))
 
     # 2) cenas em corte seco, no tamanho exato em batidas; a assinatura entra depois por cima
-    camadas = Camadas()
+    camadas = Camadas(proj["gancho"], cenas)
     partes = []
-    for i, (ini, batidas, _) in enumerate(CENAS):
+    for i, (ini, batidas, _, *enq) in enumerate(cenas):
         quadros = round(batidas * BATIDA * FPS)
         parte = tmp / f"cena{i}.mp4"
-        ffmpeg("-ss", f"{ini:.3f}", "-i", str(base), "-frames:v", str(quadros), *X264, "-crf", "15", str(parte))
+        zoom, cx, cy = (enq + [1, 0.5, 0.5][len(enq):]) if enq else (1, 0.5, 0.5)
+        vf = enquadrar(quadros, zoom, cx, cy, proj.get("soco", False))
+        ffmpeg("-ss", f"{ini:.3f}", "-i", str(base), *(["-vf", vf] if vf else []),
+               "-frames:v", str(quadros), *X264, "-crf", "15", str(parte))
         partes.append(parte)
     lista = tmp / "lista.txt"
     lista.write_text("".join(f"file '{p}'\n" for p in partes))
@@ -296,7 +332,7 @@ def main(bruto):
 
     # 3) composição: vídeo + camadas desenhadas quadro a quadro + trilha
     musica_wav = tmp / "musica.wav"
-    musica.gerar(str(musica_wav))
+    musica.gerar(str(musica_wav), proj.get("compassos"))
     n = round(camadas.total * FPS)
     total = n / FPS
     proc = subprocess.Popen(
@@ -309,7 +345,7 @@ def main(bruto):
          f"[2:a]atrim=0:{total:.3f},afade=t=out:st={total - 1.0:.3f}:d=1.0,loudnorm=I=-14:TP=-1.5[a]",
          "-map", "[v]", "-map", "[a]", "-t", f"{total:.3f}",
          *X264, "-crf", "20", "-profile:v", "high",
-         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", str(SAIDA)],
+         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-movflags", "+faststart", str(saida)],
         stdin=subprocess.PIPE)
     for q in range(n):
         proc.stdin.write(camadas.quadro(q / FPS).tobytes())
@@ -319,10 +355,10 @@ def main(bruto):
 
     # 4) capa: o plano aberto com o gancho já na tela
     quadro = tmp / "quadro.jpg"
-    ffmpeg("-ss", "1.2", "-i", str(SAIDA), "-frames:v", "1", "-q:v", "2", str(quadro))
-    Image.open(quadro).save(CAPA, quality=92)
-    print(f"{SAIDA} ({duracao(str(SAIDA)):.1f}s) e {CAPA}")
+    ffmpeg("-ss", "1.2", "-i", str(saida), "-frames:v", "1", "-q:v", "2", str(quadro))
+    Image.open(quadro).save(capa, quality=92)
+    print(f"{saida} ({duracao(str(saida)):.1f}s) e {capa}")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2])

@@ -139,8 +139,24 @@ FEED = {
 
 # Reels e stories em vídeo: {data: [dict(hora, video, commit, ...)]}. Reel leva também capa e legenda.
 # O "Tour pela banca" (reels/) foi só um teste e não é publicado.
-REELS = {}
-STORIES_VIDEO = {}
+# "status": "aguardando" segura o post até o dono aprovar (aí vira "pendente" no fila.json).
+MANGA = "01014f7f1d544ee17e37d548a38b3fd3b92aa9bb"  # commit do hortifruti3irmaos-midia com o vídeo
+REELS = {
+    date(2026, 10, 28): [dict(
+        hora="06:53", video="reels/manga-coite.mp4", capa="reels/manga-coite-capa.jpg", commit=MANGA,
+        status="aguardando",
+        legenda="CHEGOU MANGA COITÉ! 🥭💚\n"
+        "Caixa cheia de manga verdinha e fresquinha aqui no Hortifruti 3 Irmãos. Pra suco, pra sobremesa "
+        "ou pra comer na hora: é manga que não acaba!\n"
+        "Garanta a sua: passe aqui ou peça pelo Zap que a gente separa as mais bonitas pra você.\n"
+        f"{RODAPE}\n"
+        "Marca aqui quem ama manga 👇\n"
+        f"#MangaCoité #Manga {TAGS}",
+    )],
+}
+STORIES_VIDEO = {
+    date(2026, 10, 28): [dict(hora="06:53", video="reels/manga-coite.mp4", commit=MANGA, status="aguardando")],
+}
 
 BOM_DIA = ["bom-dia-1", "bom-dia-2", "bom-dia-3"]
 DICAS = ["dica-tomate", "dica-banana", "dica-folhas", "dica-manga", "dica-cebola",
@@ -189,7 +205,7 @@ def gerar():
 
     for p in postagens:
         antigo = antigos.get(p["id"], {})
-        p["status"] = antigo.get("status", "pendente")
+        p["status"] = antigo.get("status", p.get("status", "pendente"))
         if "media_id" in antigo:
             p["media_id"] = antigo["media_id"]
 
