@@ -25,6 +25,7 @@ Regras:
 - Publicar só o que está na fila.
 - Nunca publicar um item de outro dia.
 - Nunca publicar duas vezes o mesmo `id`.
+- Carrossel de mercadoria nova (quinta): vai junto **um único story**, só a capa dizendo que chegou mercadoria nova. Nunca postar os outros slides como stories.
 
 ## Como mudar a programação
 
