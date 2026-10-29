@@ -109,7 +109,8 @@
       "imagens": [
         "stories/fotos/bom-dia-3.jpg"
       ],
-      "status": "pendente"
+      "status": "erro",
+      "erro": "sessão reiniciou, passou do horário"
     },
     {
       "id": "2026-10-29-08:53-story-dica-melancia",
@@ -119,7 +120,8 @@
       "imagens": [
         "stories/fotos/dica-melancia.jpg"
       ],
-      "status": "pendente"
+      "status": "erro",
+      "erro": "sessão reiniciou, passou do horário"
     },
     {
       "id": "2026-10-29-10:53-story-zap-4",
@@ -129,7 +131,8 @@
       "imagens": [
         "stories/fotos/zap-4.jpg"
       ],
-      "status": "pendente"
+      "status": "publicado",
+      "media_id": "18118113280807443"
     },
     {
       "id": "2026-10-29-05:57-carrossel-q01-quinta-chegou-foto",
