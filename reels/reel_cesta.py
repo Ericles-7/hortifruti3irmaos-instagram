@@ -39,13 +39,15 @@ PROJETOS = {
     # vídeos da mãe de 29/10 (sem a cesta e a fachada ainda): bancas cheias, cortes de 1 batida
     "chegou-29-10": [
         ("brutos/melancia-cortada.mp4", 2.5, 3),
+        ("brutos/verduras.mp4", 0.5, 1),
         ("brutos/laranja.mp4", 0.5, 1),
+        ("brutos/mamao-1.mp4", 1.0, 1),
         ("brutos/cebola.mp4", 0.0, 1),
         ("brutos/alho.mp4", 3.0, 1),
-        ("brutos/melancia-pilha.mp4", 1.0, 1),
+        ("brutos/verduras.mp4", 13.5, 1),
         ("brutos/melancia-cortada.mp4", 7.0, 1),
         ("brutos/laranja.mp4", 3.0, 1),
-        ("brutos/cebola.mp4", 6.0, 1),
+        ("brutos/mamao-1.mp4", 17.5, 1),
         ("brutos/alho.mp4", 7.0, 1),
         ("brutos/melancia-pilha.mp4", 12.0, 2),
     ],
