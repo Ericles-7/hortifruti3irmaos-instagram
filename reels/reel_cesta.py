@@ -13,10 +13,13 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 import musica
+import musica_forro
 from editar_reel import FPS, INSTAGRAM, PASTA, H, W, X264, cena_foto, colar_centro, ffmpeg, fonte, icone_logo
 from reel_semana import CREME, cena_video
 
 BATIDAS_FIM = 6  # fachada escurecendo com o emblema e o @
+# trilha por projeto (padrão: ukulele da musica.py); todas em 112 BPM
+TRILHA = {"chegou-29-10": musica_forro}
 
 # Preencher com os vídeos da mãe: a cesta, as bancas (meia batida cada) e a fachada (última cena).
 PROJETOS = {
@@ -86,7 +89,7 @@ def main(projeto):
     total = n / FPS
     inicio_fim = n - round(BATIDAS_FIM * musica.BATIDA * FPS)
     wav = tmp / "musica.wav"
-    musica.gerar(str(wav), ["C", "G", "Am", "F", "C", "G", "Am", "F", "C"][:max(3, round(total / musica.COMPASSO) + 1)])
+    TRILHA.get(projeto, musica).gerar(str(wav), ["C", "G", "Am", "F", "C", "G", "Am", "F", "C"][:max(3, round(total / musica.COMPASSO) + 1)])
     saida = PASTA / f"{projeto}.mp4"
     proc = subprocess.Popen(
         ["ffmpeg", "-v", "error", "-y", "-i", str(corpo),

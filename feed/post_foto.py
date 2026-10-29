@@ -33,6 +33,24 @@ POSTS = {
          "A gente separa as mais bonitas e leva até você.\nRua Francisco Euclides Fernandes, 1200 · Uiraúna",
          "Chama no Zap! ↓"),
     ],
+    # fotos tiradas dos vídeos da mãe de 29/10 (bancas cheias)
+    "q02-quinta-chegou": [
+        ("fotos/q-melancia-cortada.jpg", "Quintou!", "Chegou mercadoria", "nova no Hortifruti 3 Irmãos.",
+         "Melancia, tangerina, cebola e alho fresquinhos, prontos pra sua mesa.",
+         "Arrasta pro lado →"),
+        ("fotos/q-tangerina.jpg", "Tangerina", "docinha", "Fresquinha da semana.",
+         "Boa pro suco, pra sobremesa e pro lanche da criançada.",
+         "Arrasta pro lado →"),
+        ("fotos/q-cebola.jpg", "Cebola", "e cebola roxa", "Banca abastecida pra semana.",
+         "Aquele tempero de todo dia, que não pode faltar na cozinha.",
+         "Arrasta pro lado →"),
+        ("fotos/q-alho.jpg", "Alho", "premium", "Graúdo e cheiroso.",
+         "Caixa nova chegando pra deixar a sua comida mais gostosa.",
+         "Arrasta pro lado →", 9),
+        ("fotos/q-melancia-pilha.jpg", "Peça pelo", "Zap", "(83) 99937-8165",
+         "A gente separa as mais bonitas e leva até você.\nRua Francisco Euclides Fernandes, 1200 · Uiraúna",
+         "Chama no Zap! ↓"),
+    ],
 }
 
 
@@ -42,9 +60,11 @@ def fonte(tamanho, peso="ExtraBold"):
     return f
 
 
-def fundo(foto):
+def fundo(foto, desfoque=0):
     img = Image.open(PASTA / foto).convert("RGB")
     img = ImageOps.fit(img, (W, H), Image.LANCZOS, centering=(0.6, 0.5))
+    if desfoque:  # para fotos com letreiro que briga com o título
+        img = img.filter(ImageFilter.GaussianBlur(desfoque))
     img = ImageEnhance.Color(img).enhance(1.25)
     img = ImageEnhance.Contrast(img).enhance(1.08)
     img = img.filter(ImageFilter.UnsharpMask(radius=2, percent=60))
@@ -93,8 +113,8 @@ def caber(d, txt, peso, tamanho, largura):
     return fonte(tamanho, peso)
 
 
-def lamina(foto, branco, verde, faixa, texto, botao):
-    img = fundo(foto)
+def lamina(foto, branco, verde, faixa, texto, botao, desfoque=0):
+    img = fundo(foto, desfoque)
     d = ImageDraw.Draw(img)
     x, larg = 70, 760
 
