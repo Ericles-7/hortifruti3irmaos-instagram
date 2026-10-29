@@ -23,7 +23,7 @@ HORA_FEED = "17:53"
 # A partir de 29/10 tudo sai de manhã, quando a loja tem mais movimento (pedido do dono).
 MANHA_DESDE = date(2026, 10, 29)
 HORA_STORY_MANHA = ["06:53", "08:53", "10:53"]
-HORA_FEED_MANHA = "06:53"
+HORA_FEED_MANHA = "05:57"  # "6h": 3 min antes da hora cheia, quando o agendador costuma atrasar
 
 
 def horarios(dia):
