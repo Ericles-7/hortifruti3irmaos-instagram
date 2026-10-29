@@ -43,7 +43,7 @@ FEED = {
         f"{RODAPE}\n"
         "Salva e manda pra quem vive dizendo que não tem tempo de ir à feira 😉\n"
         f"#Delivery {TAGS}"),
-    date(2026, 10, 29): ("q01-quinta-chegou",
+    date(2026, 10, 29): ("q01-quinta-chegou-foto",  # versão com foto (feed/post_foto.py)
         "QUINTOU! 🥬🥕 Chegou verdura nova no Hortifruti 3 Irmãos!\n"
         "Toda quinta a banca renova: folhas, legumes e reposição de frutas pra você escolher com calma. Arrasta pro lado 👉\n"
         "Quanto mais cedo, mais escolha! Passe aqui ou peça pelo Zap que a gente separa as mais bonitas.\n"
