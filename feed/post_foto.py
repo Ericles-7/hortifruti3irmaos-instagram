@@ -60,6 +60,30 @@ POSTS = {
          "A gente separa as mais bonitas e leva até você.\nRua Francisco Euclides Fernandes, 1200 · Uiraúna",
          "Chama no Zap! ↓"),
     ],
+    # Roteiro 3 do PLANEJAMENTO.md (quinta 05/11), com as fotos da mãe de 29/10
+    "r3-5-jeitos-verduras": [
+        ("../reels/fotos/couve-flor-brocolis.jpg", "Comprou verdura?", "5 ideias rápidas",
+         "pra não deixar nada estragar", "Receitas simples com o que chegou no Hortifruti 3 Irmãos.",
+         "Arrasta pro lado →", 7),
+        ("../reels/fotos/couve-flor-2.jpg", "Couve-flor", "gratinada", "Pronta em 20 minutos.",
+         "Cozinhe os buquês por 5 minutos, cubra com creme de leite e queijo e leve ao forno até dourar.",
+         "Arrasta pro lado →", 7),
+        ("../reels/fotos/brocolis.jpg", "Brócolis", "no alho", "Acompanha tudo.",
+         "Refogue alho no azeite, junte o brócolis cozido al dente, acerte o sal e pronto.",
+         "Arrasta pro lado →", 7),
+        ("../reels/fotos/pimentao.jpg", "Vinagrete", "caprichado", "Pro churrasco e pro feijão.",
+         "Pique pimentão, cebola, tomate e cheiro-verde; tempere com vinagre, azeite e sal.",
+         "Arrasta pro lado →"),
+        ("../reels/fotos/cenoura.jpg", "Cenoura", "na salada", "Ralada e crocante.",
+         "Rale crua e tempere com limão, azeite e sal. E ainda vai no bolo!",
+         "Arrasta pro lado →"),
+        ("../reels/fotos/pimenta-de-cheiro.jpg", "Pimenta-de-cheiro", "no feijão", "Perfume sem ardência.",
+         "Pique sem as sementes e refogue junto com o alho e a cebola antes do feijão.",
+         "Arrasta pro lado →"),
+        ("../reels/fotos/cheiro-verde.jpg", "Tudo isso", "tem aqui!", "Peça pelo Zap (83) 99937-8165",
+         "A gente separa as mais bonitas pra você.\nRua Francisco Euclides Fernandes, 1200 · Uiraúna",
+         "Chama no Zap! ↓"),
+    ],
 }
 
 

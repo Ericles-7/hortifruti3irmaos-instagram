@@ -55,96 +55,16 @@ FEED = {
         "Se não serve pra nossa mesa, não vai pra sua!\n"
         f"{RODAPE}\n"
         f"#Compromisso3Irmãos {TAGS}"),
-    date(2026, 11, 2): ("s01-segunda-chegou",
-        "SEGUNDOU! 🍍🍊 Chegou fruta nova!\n"
-        "Toda segunda a fruteira renova: frutas da estação, opções pro lanche e pro suco — tudo escolhido a dedo. Arrasta pro lado 👉\n"
-        "Comece a semana com a fruteira cheia: passe no hortifruti ou peça pelo Zap.\n"
+    # A partir de 02/11: rodízio semanal do PLANEJAMENTO.md (pedido do dono em 30/10).
+    # (nome, legenda[, nº de imagens[, status]]); "aguardando" segura até o dono aprovar a prévia.
+    date(2026, 11, 5): ("r3-5-jeitos-verduras",
+        "Comprou verdura e não sabe o que fazer? 🥦🥕 Separamos 5 ideias rápidas!\n"
+        "Couve-flor gratinada, brócolis no alho, vinagrete caprichado, cenoura na salada e pimenta-de-cheiro "
+        "no feijão. Arrasta pro lado 👉\n"
+        "Tudo isso tem fresquinho aqui no Hortifruti 3 Irmãos: passe aqui ou peça pelo Zap que a gente separa.\n"
         f"{RODAPE}\n"
-        "Qual fruta não pode faltar na sua casa? Comenta aqui 👇\n"
-        f"#SegundaDaFruta {TAGS}"),
-    date(2026, 11, 4): ("02-familia",
-        "Uma família cuidando da sua mesa 💚\n"
-        "Aqui cada fruta, verdura e legume é escolhido com o mesmo carinho que a gente tem com a nossa própria casa. Frescor todo dia, escolha a dedo e atendimento de família. Arrasta pro lado 👉\n"
-        f"{RODAPE}\n"
-        "Segue a gente pra receber ofertas e dicas toda semana!\n"
-        f"#NegócioDeFamília {TAGS}"),
-    date(2026, 11, 5): ("q02-quinta-salada",
-        "Salada hoje é lei! 🥗\n"
-        "Base verde, muita cor e aquela crocância que faz falta: arrasta e monte a salada perfeita em 3 passos 👉\n"
-        "Tudo pra sua salada tá aqui — é só mandar a lista no Zap.\n"
-        f"{RODAPE}\n"
-        "Salva pra fazer no almoço!\n"
-        f"#QuintaDaVerdura {TAGS}"),
-    date(2026, 11, 7): ("v02-preco-baixo",
-        "Preço baixo DE VERDADE 💸🍉\n"
-        "Promoção toda semana, ofertas do dia no Zap e feira completa num lugar só, sem rodar a cidade. Arrasta e veja como sua feira rende mais 👉\n"
-        "Sacola cheia, bolso feliz!\n"
-        f"{RODAPE}\n"
-        f"#PreçoBaixo #Compromisso3Irmãos {TAGS}"),
-    date(2026, 11, 9): ("s02-segunda-no-ponto",
-        "Abacaxi, melancia e manga no ponto 🍍🍉🥭\n"
-        "É Segunda da Fruta! Arrasta e nunca mais erre na escolha 👉\n"
-        "Fruta no ponto é aqui: escolha com a gente ou peça pelo Zap.\n"
-        f"{RODAPE}\n"
-        "Salva e manda pra quem vai à feira!\n"
-        f"#SegundaDaFruta {TAGS}"),
-    date(2026, 11, 11): ("03-site",
-        "Sua feira no celular 📱🛒\n"
-        "Escolha os produtos, monte o pedido e pague no Pix, cartão ou na entrega. Retire no hortifruti ou receba em casa, aqui em Uiraúna. Arrasta pro passo a passo 👉\n"
-        "O link está na bio do perfil!\n"
-        f"{RODAPE}\n"
-        f"#FeiraOnline {TAGS}"),
-    date(2026, 11, 12): ("q03-quinta-conservar",
-        "Verdura nova dura mais assim 🥬\n"
-        "É Quinta da Verdura! Arrasta e veja 3 truques de quem é da feira pra couve, cheiro-verde, rúcula e alface ficarem verdinhos por mais tempo 👉\n"
-        f"{RODAPE}\n"
-        "Salva e manda pra quem vive jogando folha fora!\n"
-        f"#QuintaDaVerdura {TAGS}"),
-    date(2026, 11, 14): ("v03-compromisso",
-        "Aqui você não é só mais um cliente 🤝\n"
-        "A gente te chama pelo nome, separa seu pedido do Zap como se fosse pra nossa casa e leva até a sua porta em Uiraúna. Arrasta e veja nosso compromisso 👉\n"
-        "Palavra de irmão é palavra dada!\n"
-        f"{RODAPE}\n"
-        f"#Compromisso3Irmãos {TAGS}"),
-    date(2026, 11, 16): ("04-dica-mamao",
-        "Você sabe escolher o mamão no ponto? 🧡\n"
-        "É Segunda da Fruta e a dica de hoje é do mamão: como escolher e como guardar. Arrasta e aprenda em 3 passos 👉\n"
-        f"{RODAPE}\n"
-        "Salva esta dica e manda pra quem vai à feira!\n"
-        f"#SegundaDaFruta #DicaDaFeira {TAGS}"),
-    date(2026, 11, 18): ("05-endereco",
-        "Venha nos visitar! 📍\n"
-        "No hortifruti, pelo WhatsApp ou pelo site: do jeito que for melhor pra você. Arrasta pro lado 👉\n"
-        f"{RODAPE}\n"
-        "Marca aqui quem precisa conhecer o Hortifruti 3 Irmãos!\n"
-        f"{TAGS}"),
-    date(2026, 11, 19): ("q04-quinta-couve",
-        "3 jeitos de amar a couve 💚\n"
-        "Refogada, na farofa ou no suco verde: arrasta e escolha o seu preferido 👉\n"
-        "Couve fresquinha chegou hoje! Chama no Zap e peça a sua.\n"
-        f"{RODAPE}\n"
-        "Qual é o seu? Comenta aí 👇\n"
-        f"#QuintaDaVerdura {TAGS}"),
-    date(2026, 11, 21): ("08-vem-pra-feira",
-        "3 irmãos, 3 compromissos com você 🍎🍅🥑\n"
-        "Qualidade a dedo, preço baixo de verdade e cliente tratado como família. Arrasta e conheça cada um 👉\n"
-        "Vem conferir a diferença! Marca quem merece uma feira assim.\n"
-        f"{RODAPE}\n"
-        f"#Compromisso3Irmãos {TAGS}"),
-    date(2026, 11, 23): ("07-dica-banana",
-        "Banana passando do ponto rápido demais? 🍌\n"
-        "É Segunda da Fruta! Arrasta e aprenda em 3 passos a guardar, amadurecer e aproveitar a banana até o fim 👉\n"
-        "Banana boa é aqui: dúzia ou unidade, do jeito que você quiser.\n"
-        f"{RODAPE}\n"
-        "Salva e manda pra quem vai à feira!\n"
-        f"#SegundaDaFruta #DicaDaFeira {TAGS}"),
-    date(2026, 11, 25): ("06-dica-folhas",
-        "Sua alface murcha rápido na geladeira? 🥬\n"
-        "Arrasta e aprenda em 3 passos a manter as folhas verdinhas por mais tempo 👉\n"
-        "Folhas fresquinhas toda semana: peça pelo Zap que a gente escolhe pra você.\n"
-        f"{RODAPE}\n"
-        "Salva e manda pra quem vai à feira!\n"
-        f"#DicaDaFeira {TAGS}"),
+        "Salva pra fazer no almoço de hoje 😋 Qual você vai testar primeiro?\n"
+        f"#ReceitaFácil #Verduras {TAGS}", 7, "aguardando"),
 }
 
 # Reels e stories em vídeo: {data: [dict(hora, video, commit, ...)]}. Reel leva também capa e legenda.
@@ -180,6 +100,30 @@ REELS[date(2026, 10, 31)] = [dict(
     "Qual dessas dicas você não sabia? Comenta aqui 👇\n"
     f"#ComoEscolher #DicaDaFeira {TAGS}",
 )]
+# Semana A (02/11): Roteiro 2 na segunda e Roteiro 5 na sexta. Commit do repositório de mídia em MIDIA_02_11.
+MIDIA_02_11 = "8b8f227edf360c6bea918493d6da923625761dd0"
+REELS[date(2026, 11, 2)] = [dict(
+    hora="05:57", video="reels/pov-segunda-fruta.mp4", capa="reels/pov-segunda-fruta-capa.jpg",
+    commit=MIDIA_02_11, status="aguardando",
+    legenda="POV: você chegou cedo na Segunda da Fruta 🍉🥭\n"
+    "Toda segunda chega fruta nova aqui no Hortifruti 3 Irmãos: melancia, mamão, tangerina, uva sem semente, "
+    "ameixa, kiwi e manga coité fresquinhos.\n"
+    "Fruta que chegou hoje é fruta que acaba hoje! Passe aqui ou peça pelo Zap que a gente separa as mais bonitas.\n"
+    f"{RODAPE}\n"
+    "Qual dessas vai pra sua casa hoje? Comenta aqui 👇\n"
+    f"#SegundaDaFruta {TAGS}",
+)]
+REELS[date(2026, 11, 6)] = [dict(
+    hora="05:57", video="reels/lista-fim-de-semana.mp4", capa="reels/lista-fim-de-semana-capa.jpg",
+    commit=MIDIA_02_11, status="aguardando",
+    legenda="Sextou! Já fez a lista do fim de semana? 📝✅\n"
+    "Mamão pro café, uva pra sobremesa, alface e cheiro-verde, pimenta-de-cheiro, pimentão pro vinagrete, "
+    "melancia pra gelar e doce caseiro: tem tudo aqui no Hortifruti 3 Irmãos.\n"
+    "Separa pelo Zap hoje e passa pra pegar! Sábado estamos abertos das 4h às 15h.\n"
+    f"{RODAPE}\n"
+    "O que não pode faltar na sua lista? Comenta aqui 👇\n"
+    f"#Sextou #FimDeSemana {TAGS}",
+)]
 STORIES_VIDEO = {
     date(2026, 10, 28): [dict(hora="06:53", video="reels/manga-coite.mp4", commit=MANGA)],
 }
@@ -205,8 +149,28 @@ def story_imagem(nome, dia):
     return f"stories/banco/{nome}.jpg"
 
 
+# Rodízio semanal (PLANEJAMENTO.md): semana A tem a Segunda da Fruta, semana B a Quinta da Verdura.
+RODIZIO_DESDE = date(2026, 11, 2)  # segunda de uma semana A
+
+
+def semana_a(dia):
+    return (dia - RODIZIO_DESDE).days // 7 % 2 == 0
+
+
 def stories_do_dia(n, dia):
     """Os 3 stories do dia: bom dia, dica e chamada (zap / fim de semana / endereço / família)."""
+    zap = ZAP[n % len(ZAP)]
+    if dia >= date(2026, 10, 31) and dia.weekday() == 5:  # horário de sábado já no 1º sábado
+        return ["sabado-feira", "sabado-doces", zap]
+    if dia >= RODIZIO_DESDE:
+        if dia.weekday() == 0 and semana_a(dia):
+            return ["fruta-chegou", "fruta-video", "fruta-zap"]
+        if dia.weekday() == 3 and not semana_a(dia):
+            return ["quinta-chegou", "verdura-destaque", zap]
+        if dia.weekday() == 4:
+            return ["sextou", "sexta-produto", "sexta-zap"]
+        if dia.weekday() == 5:
+            return ["sabado-feira", "sabado-doces", zap]
     # sábado: endereço (ilustrado) só até ter a foto da fachada
     sabado = "endereco" if dia < FOTOS_DESDE else ZAP[n % len(ZAP)]
     tarde = {4: "fim-de-semana", 5: sabado, 6: f"familia-{n // 7 % 2 + 1}"}.get(
@@ -231,12 +195,13 @@ def gerar():
                 "imagens": [story_imagem(nome, dia)],
             })
         if dia in FEED:
-            nome, legenda = FEED[dia]
+            nome, legenda, *extra = FEED[dia]
             postagens.append({
                 "id": f"{dia}-{hora_feed}-carrossel-{nome}",
                 "data": str(dia), "hora": hora_feed, "tipo": "carrossel",
-                "imagens": [f"{nome}-{i}.jpg" for i in (1, 2, 3)],
+                "imagens": [f"{nome}-{i}.jpg" for i in range(1, (extra[0] if extra else 3) + 1)],
                 "legenda": legenda,
+                **({"status": extra[1]} if len(extra) > 1 else {}),
             })
         for tipo, extras in (("reel", REELS), ("story", STORIES_VIDEO)):
             for r in extras.get(dia, []):

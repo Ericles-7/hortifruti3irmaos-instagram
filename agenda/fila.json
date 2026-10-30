@@ -176,22 +176,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-10-31-06:53-story-bom-dia-2",
+      "id": "2026-10-31-06:53-story-sabado-feira",
       "data": "2026-10-31",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-2.jpg"
+        "stories/fotos/sabado-feira.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-31-08:53-story-dica-manga",
+      "id": "2026-10-31-08:53-story-sabado-doces",
       "data": "2026-10-31",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/sabado-doces.jpg"
       ],
       "status": "pendente"
     },
@@ -260,47 +260,45 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-06:53-story-bom-dia-1",
+      "id": "2026-11-02-06:53-story-fruta-chegou",
       "data": "2026-11-02",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-1.jpg"
+        "stories/fotos/fruta-chegou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-08:53-story-dica-melancia",
+      "id": "2026-11-02-08:53-story-fruta-video",
       "data": "2026-11-02",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melancia.jpg"
+        "stories/fotos/fruta-video.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-10:53-story-zap-1",
+      "id": "2026-11-02-10:53-story-fruta-zap",
       "data": "2026-11-02",
       "hora": "10:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/zap-1.jpg"
+        "stories/fotos/fruta-zap.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-02-05:57-carrossel-s01-segunda-chegou",
+      "id": "2026-11-02-05:57-reel-pov-segunda-fruta",
       "data": "2026-11-02",
+      "tipo": "reel",
       "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "s01-segunda-chegou-1.jpg",
-        "s01-segunda-chegou-2.jpg",
-        "s01-segunda-chegou-3.jpg"
-      ],
-      "legenda": "SEGUNDOU! 🍍🍊 Chegou fruta nova!\nToda segunda a fruteira renova: frutas da estação, opções pro lanche e pro suco — tudo escolhido a dedo. Arrasta pro lado 👉\nComece a semana com a fruteira cheia: passe no hortifruti ou peça pelo Zap.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual fruta não pode faltar na sua casa? Comenta aqui 👇\n#SegundaDaFruta #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
+      "video": "reels/pov-segunda-fruta.mp4",
+      "capa": "reels/pov-segunda-fruta-capa.jpg",
+      "commit": "8b8f227edf360c6bea918493d6da923625761dd0",
+      "status": "aguardando",
+      "legenda": "POV: você chegou cedo na Segunda da Fruta 🍉🥭\nToda segunda chega fruta nova aqui no Hortifruti 3 Irmãos: melancia, mamão, tangerina, uva sem semente, ameixa, kiwi e manga coité fresquinhos.\nFruta que chegou hoje é fruta que acaba hoje! Passe aqui ou peça pelo Zap que a gente separa as mais bonitas.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual dessas vai pra sua casa hoje? Comenta aqui 👇\n#SegundaDaFruta #Uiraúna #Hortifruti3Irmãos #FeiraFresca"
     },
     {
       "id": "2026-11-03-06:53-story-bom-dia-2",
@@ -363,19 +361,6 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-04-05:57-carrossel-02-familia",
-      "data": "2026-11-04",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "02-familia-1.jpg",
-        "02-familia-2.jpg",
-        "02-familia-3.jpg"
-      ],
-      "legenda": "Uma família cuidando da sua mesa 💚\nAqui cada fruta, verdura e legume é escolhido com o mesmo carinho que a gente tem com a nossa própria casa. Frescor todo dia, escolha a dedo e atendimento de família. Arrasta pro lado 👉\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSegue a gente pra receber ofertas e dicas toda semana!\n#NegócioDeFamília #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
       "id": "2026-11-05-06:53-story-bom-dia-1",
       "data": "2026-11-05",
       "hora": "06:53",
@@ -406,65 +391,80 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-05-05:57-carrossel-q02-quinta-salada",
+      "id": "2026-11-05-05:57-carrossel-r3-5-jeitos-verduras",
       "data": "2026-11-05",
       "hora": "05:57",
       "tipo": "carrossel",
       "imagens": [
-        "q02-quinta-salada-1.jpg",
-        "q02-quinta-salada-2.jpg",
-        "q02-quinta-salada-3.jpg"
+        "r3-5-jeitos-verduras-1.jpg",
+        "r3-5-jeitos-verduras-2.jpg",
+        "r3-5-jeitos-verduras-3.jpg",
+        "r3-5-jeitos-verduras-4.jpg",
+        "r3-5-jeitos-verduras-5.jpg",
+        "r3-5-jeitos-verduras-6.jpg",
+        "r3-5-jeitos-verduras-7.jpg"
       ],
-      "legenda": "Salada hoje é lei! 🥗\nBase verde, muita cor e aquela crocância que faz falta: arrasta e monte a salada perfeita em 3 passos 👉\nTudo pra sua salada tá aqui — é só mandar a lista no Zap.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva pra fazer no almoço!\n#QuintaDaVerdura #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
+      "legenda": "Comprou verdura e não sabe o que fazer? 🥦🥕 Separamos 5 ideias rápidas!\nCouve-flor gratinada, brócolis no alho, vinagrete caprichado, cenoura na salada e pimenta-de-cheiro no feijão. Arrasta pro lado 👉\nTudo isso tem fresquinho aqui no Hortifruti 3 Irmãos: passe aqui ou peça pelo Zap que a gente separa.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva pra fazer no almoço de hoje 😋 Qual você vai testar primeiro?\n#ReceitaFácil #Verduras #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
+      "status": "aguardando"
     },
     {
-      "id": "2026-11-06-06:53-story-bom-dia-2",
+      "id": "2026-11-06-06:53-story-sextou",
       "data": "2026-11-06",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-2.jpg"
+        "stories/fotos/sextou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-06-08:53-story-dica-melancia",
+      "id": "2026-11-06-08:53-story-sexta-produto",
       "data": "2026-11-06",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melancia.jpg"
+        "stories/fotos/sexta-produto.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-06-10:53-story-fim-de-semana",
+      "id": "2026-11-06-10:53-story-sexta-zap",
       "data": "2026-11-06",
       "hora": "10:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/fim-de-semana.jpg"
+        "stories/fotos/sexta-zap.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-07-06:53-story-bom-dia-3",
+      "id": "2026-11-06-05:57-reel-lista-fim-de-semana",
+      "data": "2026-11-06",
+      "tipo": "reel",
+      "hora": "05:57",
+      "video": "reels/lista-fim-de-semana.mp4",
+      "capa": "reels/lista-fim-de-semana-capa.jpg",
+      "commit": "8b8f227edf360c6bea918493d6da923625761dd0",
+      "status": "aguardando",
+      "legenda": "Sextou! Já fez a lista do fim de semana? 📝✅\nMamão pro café, uva pra sobremesa, alface e cheiro-verde, pimenta-de-cheiro, pimentão pro vinagrete, melancia pra gelar e doce caseiro: tem tudo aqui no Hortifruti 3 Irmãos.\nSepara pelo Zap hoje e passa pra pegar! Sábado estamos abertos das 4h às 15h.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nO que não pode faltar na sua lista? Comenta aqui 👇\n#Sextou #FimDeSemana #Uiraúna #Hortifruti3Irmãos #FeiraFresca"
+    },
+    {
+      "id": "2026-11-07-06:53-story-sabado-feira",
       "data": "2026-11-07",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-3.jpg"
+        "stories/fotos/sabado-feira.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-07-08:53-story-zap-3",
+      "id": "2026-11-07-08:53-story-sabado-doces",
       "data": "2026-11-07",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/zap-3.jpg"
+        "stories/fotos/sabado-doces.jpg"
       ],
       "status": "pendente"
     },
@@ -476,19 +476,6 @@
       "imagens": [
         "stories/fotos/zap-4.jpg"
       ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-07-05:57-carrossel-v02-preco-baixo",
-      "data": "2026-11-07",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "v02-preco-baixo-1.jpg",
-        "v02-preco-baixo-2.jpg",
-        "v02-preco-baixo-3.jpg"
-      ],
-      "legenda": "Preço baixo DE VERDADE 💸🍉\nPromoção toda semana, ofertas do dia no Zap e feira completa num lugar só, sem rodar a cidade. Arrasta e veja como sua feira rende mais 👉\nSacola cheia, bolso feliz!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\n#PreçoBaixo #Compromisso3Irmãos #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pendente"
     },
     {
@@ -552,19 +539,6 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-09-05:57-carrossel-s02-segunda-no-ponto",
-      "data": "2026-11-09",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "s02-segunda-no-ponto-1.jpg",
-        "s02-segunda-no-ponto-2.jpg",
-        "s02-segunda-no-ponto-3.jpg"
-      ],
-      "legenda": "Abacaxi, melancia e manga no ponto 🍍🍉🥭\nÉ Segunda da Fruta! Arrasta e nunca mais erre na escolha 👉\nFruta no ponto é aqui: escolha com a gente ou peça pelo Zap.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva e manda pra quem vai à feira!\n#SegundaDaFruta #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
       "id": "2026-11-10-06:53-story-bom-dia-3",
       "data": "2026-11-10",
       "hora": "06:53",
@@ -625,35 +599,22 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-11-05:57-carrossel-03-site",
-      "data": "2026-11-11",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "03-site-1.jpg",
-        "03-site-2.jpg",
-        "03-site-3.jpg"
-      ],
-      "legenda": "Sua feira no celular 📱🛒\nEscolha os produtos, monte o pedido e pague no Pix, cartão ou na entrega. Retire no hortifruti ou receba em casa, aqui em Uiraúna. Arrasta pro passo a passo 👉\nO link está na bio do perfil!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\n#FeiraOnline #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-12-06:53-story-bom-dia-2",
+      "id": "2026-11-12-06:53-story-quinta-chegou",
       "data": "2026-11-12",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-2.jpg"
+        "stories/fotos/quinta-chegou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-12-08:53-story-dica-manga",
+      "id": "2026-11-12-08:53-story-verdura-destaque",
       "data": "2026-11-12",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/verdura-destaque.jpg"
       ],
       "status": "pendente"
     },
@@ -668,65 +629,52 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-12-05:57-carrossel-q03-quinta-conservar",
-      "data": "2026-11-12",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "q03-quinta-conservar-1.jpg",
-        "q03-quinta-conservar-2.jpg",
-        "q03-quinta-conservar-3.jpg"
-      ],
-      "legenda": "Verdura nova dura mais assim 🥬\nÉ Quinta da Verdura! Arrasta e veja 3 truques de quem é da feira pra couve, cheiro-verde, rúcula e alface ficarem verdinhos por mais tempo 👉\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva e manda pra quem vive jogando folha fora!\n#QuintaDaVerdura #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-13-06:53-story-bom-dia-3",
+      "id": "2026-11-13-06:53-story-sextou",
       "data": "2026-11-13",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-3.jpg"
+        "stories/fotos/sextou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-13-08:53-story-dica-rapadura",
+      "id": "2026-11-13-08:53-story-sexta-produto",
       "data": "2026-11-13",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-rapadura.jpg"
+        "stories/fotos/sexta-produto.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-13-10:53-story-fim-de-semana",
+      "id": "2026-11-13-10:53-story-sexta-zap",
       "data": "2026-11-13",
       "hora": "10:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/fim-de-semana.jpg"
+        "stories/fotos/sexta-zap.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-14-06:53-story-bom-dia-1",
+      "id": "2026-11-14-06:53-story-sabado-feira",
       "data": "2026-11-14",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-1.jpg"
+        "stories/fotos/sabado-feira.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-14-08:53-story-dica-melancia",
+      "id": "2026-11-14-08:53-story-sabado-doces",
       "data": "2026-11-14",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-melancia.jpg"
+        "stories/fotos/sabado-doces.jpg"
       ],
       "status": "pendente"
     },
@@ -738,19 +686,6 @@
       "imagens": [
         "stories/fotos/zap-1.jpg"
       ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-14-05:57-carrossel-v03-compromisso",
-      "data": "2026-11-14",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "v03-compromisso-1.jpg",
-        "v03-compromisso-2.jpg",
-        "v03-compromisso-3.jpg"
-      ],
-      "legenda": "Aqui você não é só mais um cliente 🤝\nA gente te chama pelo nome, separa seu pedido do Zap como se fosse pra nossa casa e leva até a sua porta em Uiraúna. Arrasta e veja nosso compromisso 👉\nPalavra de irmão é palavra dada!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\n#Compromisso3Irmãos #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pendente"
     },
     {
@@ -784,46 +719,33 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-06:53-story-bom-dia-3",
+      "id": "2026-11-16-06:53-story-fruta-chegou",
       "data": "2026-11-16",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-3.jpg"
+        "stories/fotos/fruta-chegou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-08:53-story-dica-manga",
+      "id": "2026-11-16-08:53-story-fruta-video",
       "data": "2026-11-16",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/fruta-video.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-16-10:53-story-zap-4",
+      "id": "2026-11-16-10:53-story-fruta-zap",
       "data": "2026-11-16",
       "hora": "10:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/zap-4.jpg"
+        "stories/fotos/fruta-zap.jpg"
       ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-16-05:57-carrossel-04-dica-mamao",
-      "data": "2026-11-16",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "04-dica-mamao-1.jpg",
-        "04-dica-mamao-2.jpg",
-        "04-dica-mamao-3.jpg"
-      ],
-      "legenda": "Você sabe escolher o mamão no ponto? 🧡\nÉ Segunda da Fruta e a dica de hoje é do mamão: como escolher e como guardar. Arrasta e aprenda em 3 passos 👉\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva esta dica e manda pra quem vai à feira!\n#SegundaDaFruta #DicaDaFeira #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pendente"
     },
     {
@@ -887,19 +809,6 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-18-05:57-carrossel-05-endereco",
-      "data": "2026-11-18",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "05-endereco-1.jpg",
-        "05-endereco-2.jpg",
-        "05-endereco-3.jpg"
-      ],
-      "legenda": "Venha nos visitar! 📍\nNo hortifruti, pelo WhatsApp ou pelo site: do jeito que for melhor pra você. Arrasta pro lado 👉\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nMarca aqui quem precisa conhecer o Hortifruti 3 Irmãos!\n#Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
       "id": "2026-11-19-06:53-story-bom-dia-3",
       "data": "2026-11-19",
       "hora": "06:53",
@@ -930,65 +839,52 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-19-05:57-carrossel-q04-quinta-couve",
-      "data": "2026-11-19",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "q04-quinta-couve-1.jpg",
-        "q04-quinta-couve-2.jpg",
-        "q04-quinta-couve-3.jpg"
-      ],
-      "legenda": "3 jeitos de amar a couve 💚\nRefogada, na farofa ou no suco verde: arrasta e escolha o seu preferido 👉\nCouve fresquinha chegou hoje! Chama no Zap e peça a sua.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual é o seu? Comenta aí 👇\n#QuintaDaVerdura #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-20-06:53-story-bom-dia-1",
+      "id": "2026-11-20-06:53-story-sextou",
       "data": "2026-11-20",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-1.jpg"
+        "stories/fotos/sextou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-20-08:53-story-dica-manga",
+      "id": "2026-11-20-08:53-story-sexta-produto",
       "data": "2026-11-20",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-manga.jpg"
+        "stories/fotos/sexta-produto.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-20-10:53-story-fim-de-semana",
+      "id": "2026-11-20-10:53-story-sexta-zap",
       "data": "2026-11-20",
       "hora": "10:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/fim-de-semana.jpg"
+        "stories/fotos/sexta-zap.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-21-06:53-story-bom-dia-2",
+      "id": "2026-11-21-06:53-story-sabado-feira",
       "data": "2026-11-21",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-2.jpg"
+        "stories/fotos/sabado-feira.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-11-21-08:53-story-dica-rapadura",
+      "id": "2026-11-21-08:53-story-sabado-doces",
       "data": "2026-11-21",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/dica-rapadura.jpg"
+        "stories/fotos/sabado-doces.jpg"
       ],
       "status": "pendente"
     },
@@ -1000,19 +896,6 @@
       "imagens": [
         "stories/fotos/zap-2.jpg"
       ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-21-05:57-carrossel-08-vem-pra-feira",
-      "data": "2026-11-21",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "08-vem-pra-feira-1.jpg",
-        "08-vem-pra-feira-2.jpg",
-        "08-vem-pra-feira-3.jpg"
-      ],
-      "legenda": "3 irmãos, 3 compromissos com você 🍎🍅🥑\nQualidade a dedo, preço baixo de verdade e cliente tratado como família. Arrasta e conheça cada um 👉\nVem conferir a diferença! Marca quem merece uma feira assim.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\n#Compromisso3Irmãos #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pendente"
     },
     {
@@ -1076,19 +959,6 @@
       "status": "pendente"
     },
     {
-      "id": "2026-11-23-05:57-carrossel-07-dica-banana",
-      "data": "2026-11-23",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "07-dica-banana-1.jpg",
-        "07-dica-banana-2.jpg",
-        "07-dica-banana-3.jpg"
-      ],
-      "legenda": "Banana passando do ponto rápido demais? 🍌\nÉ Segunda da Fruta! Arrasta e aprenda em 3 passos a guardar, amadurecer e aproveitar a banana até o fim 👉\nBanana boa é aqui: dúzia ou unidade, do jeito que você quiser.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva e manda pra quem vai à feira!\n#SegundaDaFruta #DicaDaFeira #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
-    },
-    {
       "id": "2026-11-24-06:53-story-bom-dia-2",
       "data": "2026-11-24",
       "hora": "06:53",
@@ -1146,19 +1016,6 @@
       "imagens": [
         "stories/fotos/zap-4.jpg"
       ],
-      "status": "pendente"
-    },
-    {
-      "id": "2026-11-25-05:57-carrossel-06-dica-folhas",
-      "data": "2026-11-25",
-      "hora": "05:57",
-      "tipo": "carrossel",
-      "imagens": [
-        "06-dica-folhas-1.jpg",
-        "06-dica-folhas-2.jpg",
-        "06-dica-folhas-3.jpg"
-      ],
-      "legenda": "Sua alface murcha rápido na geladeira? 🥬\nArrasta e aprenda em 3 passos a manter as folhas verdinhas por mais tempo 👉\nFolhas fresquinhas toda semana: peça pelo Zap que a gente escolhe pra você.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nSalva e manda pra quem vai à feira!\n#DicaDaFeira #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pendente"
     }
   ]
