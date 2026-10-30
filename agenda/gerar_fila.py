@@ -64,7 +64,7 @@ FEED = {
         "Tudo isso tem fresquinho aqui no Hortifruti 3 Irmãos: passe aqui ou peça pelo Zap que a gente separa.\n"
         f"{RODAPE}\n"
         "Salva pra fazer no almoço de hoje 😋 Qual você vai testar primeiro?\n"
-        f"#ReceitaFácil #Verduras {TAGS}", 7, "aguardando"),
+        f"#ReceitaFácil #Verduras {TAGS}", 7),
 }
 
 # Reels e stories em vídeo: {data: [dict(hora, video, commit, ...)]}. Reel leva também capa e legenda.
@@ -104,7 +104,7 @@ REELS[date(2026, 10, 31)] = [dict(
 MIDIA_02_11 = "8b8f227edf360c6bea918493d6da923625761dd0"
 REELS[date(2026, 11, 2)] = [dict(
     hora="05:57", video="reels/pov-segunda-fruta.mp4", capa="reels/pov-segunda-fruta-capa.jpg",
-    commit=MIDIA_02_11, status="aguardando",
+    commit=MIDIA_02_11,
     legenda="POV: você chegou cedo na Segunda da Fruta 🍉🥭\n"
     "Toda segunda chega fruta nova aqui no Hortifruti 3 Irmãos: melancia, mamão, tangerina, uva sem semente, "
     "ameixa, kiwi e manga coité fresquinhos.\n"
@@ -115,7 +115,7 @@ REELS[date(2026, 11, 2)] = [dict(
 )]
 REELS[date(2026, 11, 6)] = [dict(
     hora="05:57", video="reels/lista-fim-de-semana.mp4", capa="reels/lista-fim-de-semana-capa.jpg",
-    commit=MIDIA_02_11, status="aguardando",
+    commit=MIDIA_02_11,
     legenda="Sextou! Já fez a lista do fim de semana? 📝✅\n"
     "Mamão pro café, uva pra sobremesa, alface e cheiro-verde, pimenta-de-cheiro, pimentão pro vinagrete, "
     "melancia pra gelar e doce caseiro: tem tudo aqui no Hortifruti 3 Irmãos.\n"
