@@ -164,6 +164,22 @@ REELS = {
         f"#MangaCoité #Manga {TAGS}",
     )],
 }
+# "Como escolher fruta boa": aprovado pelo dono em 30/10, no lugar do carrossel v01-qualidade de 31/10.
+COMO_ESCOLHER = "577ee8b6450dfcc270f102172059a4e18d0b76b4"
+REELS[date(2026, 10, 31)] = [dict(
+    hora="05:57", video="reels/como-escolher.mp4", capa="reels/como-escolher-capa.jpg", commit=COMO_ESCOLHER,
+    legenda="Como escolher fruta boa e não errar mais! 🍉🥭\n"
+    "Salva esse vídeo pra lembrar na hora da feira 👇\n"
+    "1️⃣ Melancia: dê uns tapinhas, som oco é sinal de madura\n"
+    "2️⃣ Mamão: casca amarelando e firme ao apertar\n"
+    "3️⃣ Tangerina: pegue a mais pesada, é a mais suculenta\n"
+    "4️⃣ Kiwi: apertou e cedeu um pouquinho? Tá no ponto\n"
+    "5️⃣ Uva: bagos firmes e bem presos no cacho\n"
+    "Ou deixa que a gente escolhe pra você aqui no Hortifruti 3 Irmãos: manda sua lista no Zap!\n"
+    f"{RODAPE}\n"
+    "Qual dessas dicas você não sabia? Comenta aqui 👇\n"
+    f"#ComoEscolher #DicaDaFeira {TAGS}",
+)]
 STORIES_VIDEO = {
     date(2026, 10, 28): [dict(hora="06:53", video="reels/manga-coite.mp4", commit=MANGA)],
 }
