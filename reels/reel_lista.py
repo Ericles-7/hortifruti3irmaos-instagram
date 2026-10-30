@@ -29,18 +29,18 @@ SEG_FIM = 3.4
 
 PROJETOS = {
     "lista-fim-de-semana": dict(
-        gancho=("brutos/uva-ameixa.mp4", 4.0, "Sextou!", "Já fez a lista do fim de semana?"),
+        gancho=("arquivo/2026-10/brutos/uva-ameixa.mp4", 4.0, "Sextou!", "Já fez a lista do fim de semana?"),
         titulo="Lista do fim de semana",
         itens=[
-            ("brutos/mamao-1.mp4", 1.0, "Mamão pro café"),
-            ("brutos/uva-ameixa.mp4", 1.0, "Uva pra sobremesa"),
-            ("brutos/verduras.mp4", 0.5, "Alface e cheiro-verde"),
-            ("brutos/pimenta-de-cheiro.mp4", 0.75, "Pimenta-de-cheiro"),
-            ("brutos/pimentao.mp4", 3.0, "Pimentão pro vinagrete"),
-            ("brutos/melancia-cortada.mp4", 1.5, "Melancia pra gelar"),
-            ("brutos/doces-2.mp4", 0.0, "Doce caseiro"),
+            ("arquivo/2026-10/brutos/mamao-1.mp4", 1.0, "Mamão pro café"),
+            ("arquivo/2026-10/brutos/uva-ameixa.mp4", 1.0, "Uva pra sobremesa"),
+            ("arquivo/2026-10/brutos/verduras.mp4", 0.5, "Alface e cheiro-verde"),
+            ("arquivo/2026-10/brutos/pimenta-de-cheiro.mp4", 0.75, "Pimenta-de-cheiro"),
+            ("arquivo/2026-10/brutos/pimentao.mp4", 3.0, "Pimentão pro vinagrete"),
+            ("arquivo/2026-10/brutos/melancia-cortada.mp4", 1.5, "Melancia pra gelar"),
+            ("arquivo/2026-10/brutos/doces-2.mp4", 0.0, "Doce caseiro"),
         ],
-        chamada=("brutos/ameixa.mp4", 2.75, "Separa pelo Zap hoje\ne passa pra pegar!",
+        chamada=("arquivo/2026-10/brutos/ameixa.mp4", 2.75, "Separa pelo Zap hoje\ne passa pra pegar!",
                  "Sábado aberto das 4h às 15h"),
     ),
 }

@@ -26,18 +26,18 @@ SEG_FIM = 3.4
 # "frase" (texto grande no meio) ou "chamada" (texto grande + legenda do Zap).
 PROJETOS = {
     "pov-segunda-fruta": [
-        ("brutos/melancia-cortada.mp4", 0.0, 6, "gancho",
+        ("arquivo/2026-10/brutos/melancia-cortada.mp4", 0.0, 6, "gancho",
          "você chegou cedo na Segunda da Fruta do Hortifruti 3 Irmãos"),
-        ("brutos/melancia-cortada.mp4", 1.6, 2, "corte", "Melancia"),
-        ("brutos/mamao-1.mp4", 1.0, 2, "corte", "Mamão"),
-        ("brutos/laranja.mp4", 0.5, 2, "corte", "Tangerina"),
-        ("brutos/uva-ameixa.mp4", 1.0, 2, "corte", "Uva sem semente"),
-        ("brutos/uva-ameixa.mp4", 12.0, 2, "corte", "Ameixa"),
-        ("brutos/kiwi.mp4", 1.0, 2, "corte", "Kiwi"),
-        ("brutos/manga.mp4", 0.0, 2, "corte", "Manga coité"),
-        ("brutos/tangerina-caixa.mp4", 0.5, 2, "corte", "Tangerina na caixa"),
-        ("brutos/ameixa.mp4", 2.75, 6, "frase", "Fruta que chegou hoje\né fruta que acaba hoje!"),
-        ("brutos/uva-ameixa.mp4", 4.0, 6, "chamada", "Passa aqui ou\npede pelo Zap!|A gente separa as mais bonitas"),
+        ("arquivo/2026-10/brutos/melancia-cortada.mp4", 1.6, 2, "corte", "Melancia"),
+        ("arquivo/2026-10/brutos/mamao-1.mp4", 1.0, 2, "corte", "Mamão"),
+        ("arquivo/2026-10/brutos/laranja.mp4", 0.5, 2, "corte", "Tangerina"),
+        ("arquivo/2026-10/brutos/uva-ameixa.mp4", 1.0, 2, "corte", "Uva sem semente"),
+        ("arquivo/2026-10/brutos/uva-ameixa.mp4", 12.0, 2, "corte", "Ameixa"),
+        ("arquivo/2026-10/brutos/kiwi.mp4", 1.0, 2, "corte", "Kiwi"),
+        ("arquivo/2026-10/brutos/manga.mp4", 0.0, 2, "corte", "Manga coité"),
+        ("arquivo/2026-10/brutos/tangerina-caixa.mp4", 0.5, 2, "corte", "Tangerina na caixa"),
+        ("arquivo/2026-10/brutos/ameixa.mp4", 2.75, 6, "frase", "Fruta que chegou hoje\né fruta que acaba hoje!"),
+        ("arquivo/2026-10/brutos/uva-ameixa.mp4", 4.0, 6, "chamada", "Passa aqui ou\npede pelo Zap!|A gente separa as mais bonitas"),
     ],
 }
 

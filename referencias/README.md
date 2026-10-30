@@ -13,3 +13,10 @@ ilustração nem banco de imagem), e **sem preços** (decisão do dono: a concor
 O que pedir nas próximas gravações para ficar igual às referências:
 - **Mão segurando o produto** na frente da banca cheia (Celeiro), em foto ou vídeo curto, de pé (vertical).
 - Banca bem abastecida e iluminada, sem prateleira vazia.
+
+## Arquivo de mídias
+
+As mídias brutas antigas ficam em `reels/arquivo/<ano-mês>/` (brutos e fotos), e os projetos já publicados apontam
+para lá. As mídias novas entram em `reels/brutos` e `reels/fotos`. Em 30/10 foram arquivadas as de 29/10 e
+entraram as de 30/10 (uva verde e roxa, uva-passa, maçã, melão, mamão, tangerina, repolho verde e roxo, amendoim,
+pimentão; `sacos-a-confirmar.mp4` aguarda o dono dizer o que é).

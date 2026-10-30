@@ -65,6 +65,21 @@ FEED = {
         f"{RODAPE}\n"
         "Salva pra fazer no almoço de hoje 😋 Qual você vai testar primeiro?\n"
         f"#ReceitaFácil #Verduras {TAGS}", 7),
+    date(2026, 11, 12): ("q03-quinta-chegou",
+        "QUINTOU! 🥬🍇 Chegou mercadoria nova no Hortifruti 3 Irmãos!\n"
+        "Repolho verde e roxo, pimentão, uva roxa, uva verde, maçã e melão fresquinhos pra sua semana. Arrasta pro lado 👉\n"
+        "Passe aqui ou peça pelo Zap que a gente separa as mais bonitas.\n"
+        f"{RODAPE}\n"
+        "O que não pode faltar na sua feira? Comenta aqui 👇\n"
+        f"#QuintaDaVerdura {TAGS}", 8, "aguardando"),
+    date(2026, 11, 13): ("r5-sobremesa",
+        "Sextou! Já pensou na sobremesa do fim de semana? 🍇🍉\n"
+        "Salada de frutas, uva congelada, arroz doce com uva-passa, vitamina de mamão e amendoim torradinho: "
+        "5 ideias com o que tem fresquinho aqui no Hortifruti 3 Irmãos. Arrasta pro lado 👉\n"
+        "Separa pelo Zap e passa pra pegar! Sábado estamos abertos das 4h às 15h.\n"
+        f"{RODAPE}\n"
+        "Qual vai ser a sobremesa aí na sua casa? Comenta aqui 👇\n"
+        f"#Sextou #Sobremesa {TAGS}", 7, "aguardando"),
 }
 
 # Reels e stories em vídeo: {data: [dict(hora, video, commit, ...)]}. Reel leva também capa e legenda.
@@ -123,6 +138,23 @@ REELS[date(2026, 11, 6)] = [dict(
     f"{RODAPE}\n"
     "O que não pode faltar na sua lista? Comenta aqui 👇\n"
     f"#Sextou #FimDeSemana {TAGS}",
+)]
+# Semana B: Roteiro 4 na segunda 09/11 (mídias de 30/10).
+MIDIA_09_11 = "5c3781d93c9853cb7c9c371a49c496c0190c3279"
+REELS[date(2026, 11, 9)] = [dict(
+    hora="05:57", video="reels/como-guardar.mp4", capa="reels/como-guardar-capa.jpg",
+    commit=MIDIA_09_11, status="aguardando",
+    legenda="Sua fruta estraga rápido? Guarda assim que dura mais! 🍎🥬\n"
+    "Salva esse vídeo 👇\n"
+    "1️⃣ Repolho: inteiro e sem lavar, num saco na geladeira\n"
+    "2️⃣ Maçã: na geladeira, longe das outras frutas\n"
+    "3️⃣ Uva: na geladeira e sem lavar; lave só na hora de comer\n"
+    "4️⃣ Mamão: fora da geladeira até amadurecer, depois na geladeira\n"
+    "5️⃣ Tangerina: em lugar fresco e arejado\n"
+    "E quando acabar, a gente leva mais: peça pelo Zap aqui no Hortifruti 3 Irmãos!\n"
+    f"{RODAPE}\n"
+    "Qual dessas você não sabia? Comenta aqui 👇\n"
+    f"#ComoGuardar #DicaDaFeira {TAGS}",
 )]
 STORIES_VIDEO = {
     date(2026, 10, 28): [dict(hora="06:53", video="reels/manga-coite.mp4", commit=MANGA)],

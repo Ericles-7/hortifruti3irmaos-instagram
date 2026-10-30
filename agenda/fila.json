@@ -153,8 +153,7 @@
       "imagens": [
         "stories/fotos/sextou.jpg"
       ],
-      "status": "erro",
-      "erro": "sessão reiniciou várias vezes, passou do horário"
+      "status": "erro"
     },
     {
       "id": "2026-10-30-08:53-story-sexta-produto",
@@ -164,8 +163,7 @@
       "imagens": [
         "stories/fotos/sexta-produto.jpg"
       ],
-      "status": "erro",
-      "erro": "sessão reiniciou várias vezes, passou do horário"
+      "status": "erro"
     },
     {
       "id": "2026-10-30-10:53-story-sexta-zap",
@@ -543,6 +541,17 @@
       "status": "pendente"
     },
     {
+      "id": "2026-11-09-05:57-reel-como-guardar",
+      "data": "2026-11-09",
+      "tipo": "reel",
+      "hora": "05:57",
+      "video": "reels/como-guardar.mp4",
+      "capa": "reels/como-guardar-capa.jpg",
+      "commit": "5c3781d93c9853cb7c9c371a49c496c0190c3279",
+      "status": "aguardando",
+      "legenda": "Sua fruta estraga rápido? Guarda assim que dura mais! 🍎🥬\nSalva esse vídeo 👇\n1️⃣ Repolho: inteiro e sem lavar, num saco na geladeira\n2️⃣ Maçã: na geladeira, longe das outras frutas\n3️⃣ Uva: na geladeira e sem lavar; lave só na hora de comer\n4️⃣ Mamão: fora da geladeira até amadurecer, depois na geladeira\n5️⃣ Tangerina: em lugar fresco e arejado\nE quando acabar, a gente leva mais: peça pelo Zap aqui no Hortifruti 3 Irmãos!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual dessas você não sabia? Comenta aqui 👇\n#ComoGuardar #DicaDaFeira #Uiraúna #Hortifruti3Irmãos #FeiraFresca"
+    },
+    {
       "id": "2026-11-10-06:53-story-bom-dia-3",
       "data": "2026-11-10",
       "hora": "06:53",
@@ -633,6 +642,24 @@
       "status": "pendente"
     },
     {
+      "id": "2026-11-12-05:57-carrossel-q03-quinta-chegou",
+      "data": "2026-11-12",
+      "hora": "05:57",
+      "tipo": "carrossel",
+      "imagens": [
+        "q03-quinta-chegou-1.jpg",
+        "q03-quinta-chegou-2.jpg",
+        "q03-quinta-chegou-3.jpg",
+        "q03-quinta-chegou-4.jpg",
+        "q03-quinta-chegou-5.jpg",
+        "q03-quinta-chegou-6.jpg",
+        "q03-quinta-chegou-7.jpg",
+        "q03-quinta-chegou-8.jpg"
+      ],
+      "legenda": "QUINTOU! 🥬🍇 Chegou mercadoria nova no Hortifruti 3 Irmãos!\nRepolho verde e roxo, pimentão, uva roxa, uva verde, maçã e melão fresquinhos pra sua semana. Arrasta pro lado 👉\nPasse aqui ou peça pelo Zap que a gente separa as mais bonitas.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nO que não pode faltar na sua feira? Comenta aqui 👇\n#QuintaDaVerdura #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
+      "status": "aguardando"
+    },
+    {
       "id": "2026-11-13-06:53-story-sextou",
       "data": "2026-11-13",
       "hora": "06:53",
@@ -661,6 +688,23 @@
         "stories/fotos/sexta-zap.jpg"
       ],
       "status": "pendente"
+    },
+    {
+      "id": "2026-11-13-05:57-carrossel-r5-sobremesa",
+      "data": "2026-11-13",
+      "hora": "05:57",
+      "tipo": "carrossel",
+      "imagens": [
+        "r5-sobremesa-1.jpg",
+        "r5-sobremesa-2.jpg",
+        "r5-sobremesa-3.jpg",
+        "r5-sobremesa-4.jpg",
+        "r5-sobremesa-5.jpg",
+        "r5-sobremesa-6.jpg",
+        "r5-sobremesa-7.jpg"
+      ],
+      "legenda": "Sextou! Já pensou na sobremesa do fim de semana? 🍇🍉\nSalada de frutas, uva congelada, arroz doce com uva-passa, vitamina de mamão e amendoim torradinho: 5 ideias com o que tem fresquinho aqui no Hortifruti 3 Irmãos. Arrasta pro lado 👉\nSepara pelo Zap e passa pra pegar! Sábado estamos abertos das 4h às 15h.\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual vai ser a sobremesa aí na sua casa? Comenta aqui 👇\n#Sextou #Sobremesa #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
+      "status": "aguardando"
     },
     {
       "id": "2026-11-14-06:53-story-sabado-feira",

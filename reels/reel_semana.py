@@ -24,13 +24,13 @@ BATIDAS_FIM = 6
 PROJETOS = {
     # prévia com as fotos aprovadas; trocar pelos vídeos da mão pegando o produto quando chegarem
     "semana-previa": [
-        "fotos/manga-colorida.jpg",
-        "fotos/melancia-3.jpg",
-        "fotos/manga-coite.jpg",
-        "fotos/rapadura-gergelim.jpg",
-        "fotos/melancia-2.jpg",
-        ("brutos/manga.mp4", 17.0),
-        "fotos/rapadura-pilha.jpg",
+        "arquivo/2026-10/fotos/manga-colorida.jpg",
+        "arquivo/2026-10/fotos/melancia-3.jpg",
+        "arquivo/2026-10/fotos/manga-coite.jpg",
+        "arquivo/2026-10/fotos/rapadura-gergelim.jpg",
+        "arquivo/2026-10/fotos/melancia-2.jpg",
+        ("arquivo/2026-10/brutos/manga.mp4", 17.0),
+        "arquivo/2026-10/fotos/rapadura-pilha.jpg",
     ],
 }
 

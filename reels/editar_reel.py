@@ -73,9 +73,9 @@ PROJETOS = {
     "rapadura": dict(  # rapadura de gergelim (fotos + reels/brutos/rapadura.mp4)
         gancho="Chegou rapadura\nno Hortifruti 3 Irmãos!",
         cenas=[
-            ("fotos/rapadura-pilha.jpg", 4, None),
-            ("fotos/rapadura-gergelim.jpg", 3, "de gergelim..."),
-            ("fotos/rapadura-garrafas.jpg", 3, "pra adoçar o café..."),
+            ("arquivo/2026-10/fotos/rapadura-pilha.jpg", 4, None),
+            ("arquivo/2026-10/fotos/rapadura-gergelim.jpg", 3, "de gergelim..."),
+            ("arquivo/2026-10/fotos/rapadura-garrafas.jpg", 3, "pra adoçar o café..."),
             (11.0, 3, "ou comer\ncom farinha!"),
             (16.0, 3, "Garanta a sua!"),
         ],
@@ -86,8 +86,8 @@ PROJETOS = {
         gancho="Tem manga de\ntodo jeito no\nHortifruti 3 Irmãos!",
         cenas=[
             (0.0, 4, None),
-            ("fotos/manga-colorida.jpg", 3, "madurinha..."),
-            ("fotos/manga-coite.jpg", 3, "coité..."),
+            ("arquivo/2026-10/fotos/manga-colorida.jpg", 3, "madurinha..."),
+            ("arquivo/2026-10/fotos/manga-coite.jpg", 3, "coité..."),
             (11.0, 2, "pra suco..."),
             (13.0, 2, "pra comer na hora..."),
             (17.3, 2, "Garanta a sua!"),

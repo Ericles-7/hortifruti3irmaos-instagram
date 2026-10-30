@@ -13,7 +13,7 @@ from editar_reel import (AMARELO, BRANCO, INSTAGRAM, VERDE, VERDE_CLARO, VERDE_E
 
 RAIZ = Path(__file__).parent.parent
 SAIDA = RAIZ / "stories" / "fotos"
-R = "reels/fotos/"
+R = "reels/arquivo/2026-10/fotos/"  # fotos de 29/10, arquivadas em 30/10
 
 # nome: (foto, etiqueta, título (\n quebra a linha), texto)
 STORIES = {

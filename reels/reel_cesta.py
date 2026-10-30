@@ -24,32 +24,32 @@ TRILHA = {"chegou-29-10": musica_forro}
 # Preencher com os vídeos da mãe: a cesta, as bancas (meia batida cada) e a fachada (última cena).
 PROJETOS = {
     "cesta-modelo": [
-        ("brutos/manga.mp4", 0.0, 2),       # (trocar) mão pegando a cestinha
-        ("fotos/manga-colorida.jpg", None, 0.5),
-        ("fotos/melancia-3.jpg", None, 0.5),
-        ("fotos/manga-coite.jpg", None, 0.5),
-        ("fotos/rapadura-gergelim.jpg", None, 0.5),
-        ("brutos/manga.mp4", 11.0, 1),     # (trocar) volta à cesta
-        ("fotos/melancia-2.jpg", None, 0.5),
-        ("fotos/rapadura-pilha.jpg", None, 0.5),
-        ("fotos/manga-coite.jpg", None, 0.5),
-        ("fotos/manga-colorida.jpg", None, 0.5),
-        ("fotos/melancia-1.jpg", None, 2),  # (trocar) fachada da loja
+        ("arquivo/2026-10/brutos/manga.mp4", 0.0, 2),       # (trocar) mão pegando a cestinha
+        ("arquivo/2026-10/fotos/manga-colorida.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/melancia-3.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/manga-coite.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/rapadura-gergelim.jpg", None, 0.5),
+        ("arquivo/2026-10/brutos/manga.mp4", 11.0, 1),     # (trocar) volta à cesta
+        ("arquivo/2026-10/fotos/melancia-2.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/rapadura-pilha.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/manga-coite.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/manga-colorida.jpg", None, 0.5),
+        ("arquivo/2026-10/fotos/melancia-1.jpg", None, 2),  # (trocar) fachada da loja
     ],
     # vídeos da mãe de 29/10 (sem a cesta e a fachada ainda): bancas cheias, cortes de 1 batida
     "chegou-29-10": [
-        ("brutos/melancia-cortada.mp4", 2.5, 3),
-        ("brutos/verduras.mp4", 0.5, 1),
-        ("brutos/laranja.mp4", 0.5, 1),
-        ("brutos/mamao-1.mp4", 1.0, 1),
-        ("brutos/cebola.mp4", 0.0, 1),
-        ("brutos/alho.mp4", 3.0, 1),
-        ("brutos/verduras.mp4", 13.5, 1),
-        ("brutos/melancia-cortada.mp4", 7.0, 1),
-        ("brutos/laranja.mp4", 3.0, 1),
-        ("brutos/mamao-1.mp4", 17.5, 1),
-        ("brutos/alho.mp4", 7.0, 1),
-        ("brutos/melancia-pilha.mp4", 12.0, 2),
+        ("arquivo/2026-10/brutos/melancia-cortada.mp4", 2.5, 3),
+        ("arquivo/2026-10/brutos/verduras.mp4", 0.5, 1),
+        ("arquivo/2026-10/brutos/laranja.mp4", 0.5, 1),
+        ("arquivo/2026-10/brutos/mamao-1.mp4", 1.0, 1),
+        ("arquivo/2026-10/brutos/cebola.mp4", 0.0, 1),
+        ("arquivo/2026-10/brutos/alho.mp4", 3.0, 1),
+        ("arquivo/2026-10/brutos/verduras.mp4", 13.5, 1),
+        ("arquivo/2026-10/brutos/melancia-cortada.mp4", 7.0, 1),
+        ("arquivo/2026-10/brutos/laranja.mp4", 3.0, 1),
+        ("arquivo/2026-10/brutos/mamao-1.mp4", 17.5, 1),
+        ("arquivo/2026-10/brutos/alho.mp4", 7.0, 1),
+        ("arquivo/2026-10/brutos/melancia-pilha.mp4", 12.0, 2),
     ],
 }
 

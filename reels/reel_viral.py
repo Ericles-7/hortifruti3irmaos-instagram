@@ -24,15 +24,15 @@ from editar_reel import (AMARELO, BATIDA, BATIDAS_FIM, COR, FPS, PASTA, VERDE, V
 BATIDAS_PRODUTO = 3
 PROJETOS = {
     "frutas-viral": dict(
-        gancho=("brutos/melancia-cortada.mp4", 0.0, 3, "7 frutas fresquinhas\nque chegaram no\nHortifruti 3 Irmãos!"),
+        gancho=("arquivo/2026-10/brutos/melancia-cortada.mp4", 0.0, 3, "7 frutas fresquinhas\nque chegaram no\nHortifruti 3 Irmãos!"),
         produtos=[
-            ("brutos/melancia-cortada.mp4", 1.6, "Melancia", "vermelhinha e docinha"),
-            ("brutos/mamao-1.mp4", 1.0, "Mamão", "maduro e de vez"),
-            ("brutos/laranja.mp4", 0.5, "Tangerina", "pro suco e pro lanche"),
-            ("brutos/uva-ameixa.mp4", 1.0, "Uva", "sem semente"),
-            ("brutos/uva-ameixa.mp4", 12.0, "Ameixa", "suculenta"),
-            ("brutos/kiwi.mp4", 1.0, "Kiwi", "cheio de vitamina C"),
-            ("brutos/manga.mp4", 0.0, "Manga coité", "verdinha e firme"),
+            ("arquivo/2026-10/brutos/melancia-cortada.mp4", 1.6, "Melancia", "vermelhinha e docinha"),
+            ("arquivo/2026-10/brutos/mamao-1.mp4", 1.0, "Mamão", "maduro e de vez"),
+            ("arquivo/2026-10/brutos/laranja.mp4", 0.5, "Tangerina", "pro suco e pro lanche"),
+            ("arquivo/2026-10/brutos/uva-ameixa.mp4", 1.0, "Uva", "sem semente"),
+            ("arquivo/2026-10/brutos/uva-ameixa.mp4", 12.0, "Ameixa", "suculenta"),
+            ("arquivo/2026-10/brutos/kiwi.mp4", 1.0, "Kiwi", "cheio de vitamina C"),
+            ("arquivo/2026-10/brutos/manga.mp4", 0.0, "Manga coité", "verdinha e firme"),
         ],
         compassos=["C", "G", "Am", "F", "C", "G", "Am", "F", "C"],
     ),

@@ -28,17 +28,31 @@ SEG_FIM = 3.4  # assinatura (logo e depois o contato)
 
 PROJETOS = {
     "como-escolher": dict(
-        gancho=("brutos/melancia-cortada.mp4", 0.0,
+        gancho=("arquivo/2026-10/brutos/melancia-cortada.mp4", 0.0,
                 "Como escolher\nfruta boa", "e não errar mais!", "salva esse vídeo"),
         dicas=[
-            ("brutos/melancia-cortada.mp4", 1.5, "Melancia", "Dê uns tapinhas: som oco é sinal de madura."),
-            ("brutos/mamao-1.mp4", 1.0, "Mamão", "Casca amarelando e firme ao apertar."),
-            ("brutos/laranja.mp4", 0.5, "Tangerina", "Pegue a mais pesada: é a mais suculenta."),
-            ("brutos/kiwi.mp4", 1.0, "Kiwi", "Apertou e cedeu um pouquinho? Tá no ponto."),
-            ("brutos/uva-ameixa.mp4", 1.0, "Uva", "Bagos firmes e bem presos no cacho."),
+            ("arquivo/2026-10/brutos/melancia-cortada.mp4", 1.5, "Melancia", "Dê uns tapinhas: som oco é sinal de madura."),
+            ("arquivo/2026-10/brutos/mamao-1.mp4", 1.0, "Mamão", "Casca amarelando e firme ao apertar."),
+            ("arquivo/2026-10/brutos/laranja.mp4", 0.5, "Tangerina", "Pegue a mais pesada: é a mais suculenta."),
+            ("arquivo/2026-10/brutos/kiwi.mp4", 1.0, "Kiwi", "Apertou e cedeu um pouquinho? Tá no ponto."),
+            ("arquivo/2026-10/brutos/uva-ameixa.mp4", 1.0, "Uva", "Bagos firmes e bem presos no cacho."),
         ],
-        chamada=("brutos/uva-ameixa.mp4", 12.0, "Ou deixa que a gente\nescolhe pra você!",
+        chamada=("arquivo/2026-10/brutos/uva-ameixa.mp4", 12.0, "Ou deixa que a gente\nescolhe pra você!",
                  "Manda sua lista no Zap"),
+    ),
+    # Roteiro 4 do PLANEJAMENTO.md (segunda 09/11), com as mídias de 30/10
+    "como-guardar": dict(
+        gancho=("brutos/maca-1.mp4", 0.5,
+                "Sua fruta\nestraga rápido?", "Guarda assim que dura mais!", "salva esse vídeo"),
+        dicas=[
+            ("brutos/repolho-1.mp4", 0.0, "Repolho", "Inteiro e sem lavar, num saco na geladeira: dura semanas."),
+            ("brutos/maca-2.mp4", 1.0, "Maçã", "Na geladeira, longe das outras frutas: ela faz as outras amadurecerem."),
+            ("brutos/uva-roxa.mp4", 0.0, "Uva", "Na geladeira e sem lavar. Lave só na hora de comer."),
+            ("brutos/mamao-2.mp4", 2.0, "Mamão", "Fora da geladeira até amadurecer. Maduro, vai pra geladeira."),
+            ("brutos/tangerina.mp4", 5.0, "Tangerina", "Em lugar fresco e arejado. Na geladeira, dura ainda mais."),
+        ],
+        chamada=("brutos/melao.mp4", 12.4, "E quando acabar,\na gente leva mais!",
+                 "Peça pelo Zap (83) 99937-8165"),
     ),
 }
 

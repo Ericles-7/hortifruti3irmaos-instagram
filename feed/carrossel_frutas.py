@@ -11,7 +11,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageOps
 from post_foto import BRANCO, ESCURO, H, LOGO, RAIZ, W, emblema, fonte, texto_quebrado
 
 PASTA = Path(__file__).parent
-FOTOS = RAIZ / "reels" / "fotos"
+FOTOS = RAIZ / "reels" / "arquivo" / "2026-10" / "fotos"
 VERDE = (28, 94, 32)
 VERDE_VIVO = (46, 160, 60)
 LARANJA = (255, 106, 0)

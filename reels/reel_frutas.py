@@ -22,13 +22,13 @@ ZAP = "(83) 99937-8165"
 
 PROJETOS = {
     "frutas-teste": [
-        ("Melancia", "brutos/melancia-cortada.mp4", 2.5),
-        ("Mamão", "brutos/mamao-1.mp4", 1.0),
-        ("Tangerina", "brutos/laranja.mp4", 0.5),
-        ("Uva", "brutos/uva-ameixa.mp4", 1.0),
-        ("Ameixa", "brutos/uva-ameixa.mp4", 12.0),
-        ("Kiwi", "brutos/kiwi.mp4", 1.0),
-        ("Manga", "brutos/manga.mp4", 17.0),
+        ("Melancia", "arquivo/2026-10/brutos/melancia-cortada.mp4", 2.5),
+        ("Mamão", "arquivo/2026-10/brutos/mamao-1.mp4", 1.0),
+        ("Tangerina", "arquivo/2026-10/brutos/laranja.mp4", 0.5),
+        ("Uva", "arquivo/2026-10/brutos/uva-ameixa.mp4", 1.0),
+        ("Ameixa", "arquivo/2026-10/brutos/uva-ameixa.mp4", 12.0),
+        ("Kiwi", "arquivo/2026-10/brutos/kiwi.mp4", 1.0),
+        ("Manga", "arquivo/2026-10/brutos/manga.mp4", 17.0),
     ],
 }
 
