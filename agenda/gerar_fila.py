@@ -84,9 +84,9 @@ REELS = {
         f"#MangaCoité #Manga {TAGS}",
     )],
 }
-# "Como escolher fruta boa": aprovado pelo dono em 30/10, no lugar do carrossel v01-qualidade de 31/10.
+# "Como escolher fruta boa": aprovado pelo dono na noite de 29/10, publicado na sexta 30/10 às 6h.
 COMO_ESCOLHER = "577ee8b6450dfcc270f102172059a4e18d0b76b4"
-REELS[date(2026, 10, 31)] = [dict(
+REELS[date(2026, 10, 30)] = [dict(
     hora="05:57", video="reels/como-escolher.mp4", capa="reels/como-escolher-capa.jpg", commit=COMO_ESCOLHER,
     legenda="Como escolher fruta boa e não errar mais! 🍉🥭\n"
     "Salva esse vídeo pra lembrar na hora da feira 👇\n"
@@ -160,7 +160,9 @@ def semana_a(dia):
 def stories_do_dia(n, dia):
     """Os 3 stories do dia: bom dia, dica e chamada (zap / fim de semana / endereço / família)."""
     zap = ZAP[n % len(ZAP)]
-    if dia >= date(2026, 10, 31) and dia.weekday() == 5:  # horário de sábado já no 1º sábado
+    if dia >= date(2026, 10, 30) and dia.weekday() == 4:  # sexta e sábado do rodízio já nesta semana
+        return ["sextou", "sexta-produto", "sexta-zap"]
+    if dia >= date(2026, 10, 30) and dia.weekday() == 5:
         return ["sabado-feira", "sabado-doces", zap]
     if dia >= RODIZIO_DESDE:
         if dia.weekday() == 0 and semana_a(dia):

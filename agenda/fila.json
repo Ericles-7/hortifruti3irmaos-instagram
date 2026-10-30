@@ -146,34 +146,46 @@
       "status": "pausado"
     },
     {
-      "id": "2026-10-30-06:53-story-bom-dia-1",
+      "id": "2026-10-30-06:53-story-sextou",
       "data": "2026-10-30",
       "hora": "06:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/bom-dia-1.jpg"
+        "stories/fotos/sextou.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-30-08:53-story-zap-3",
+      "id": "2026-10-30-08:53-story-sexta-produto",
       "data": "2026-10-30",
       "hora": "08:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/zap-3.jpg"
+        "stories/fotos/sexta-produto.jpg"
       ],
       "status": "pendente"
     },
     {
-      "id": "2026-10-30-10:53-story-fim-de-semana",
+      "id": "2026-10-30-10:53-story-sexta-zap",
       "data": "2026-10-30",
       "hora": "10:53",
       "tipo": "story",
       "imagens": [
-        "stories/fotos/fim-de-semana.jpg"
+        "stories/fotos/sexta-zap.jpg"
       ],
       "status": "pendente"
+    },
+    {
+      "id": "2026-10-30-05:57-reel-como-escolher",
+      "data": "2026-10-30",
+      "tipo": "reel",
+      "hora": "05:57",
+      "video": "reels/como-escolher.mp4",
+      "capa": "reels/como-escolher-capa.jpg",
+      "commit": "577ee8b6450dfcc270f102172059a4e18d0b76b4",
+      "legenda": "Como escolher fruta boa e não errar mais! 🍉🥭\nSalva esse vídeo pra lembrar na hora da feira 👇\n1️⃣ Melancia: dê uns tapinhas, som oco é sinal de madura\n2️⃣ Mamão: casca amarelando e firme ao apertar\n3️⃣ Tangerina: pegue a mais pesada, é a mais suculenta\n4️⃣ Kiwi: apertou e cedeu um pouquinho? Tá no ponto\n5️⃣ Uva: bagos firmes e bem presos no cacho\nOu deixa que a gente escolhe pra você aqui no Hortifruti 3 Irmãos: manda sua lista no Zap!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual dessas dicas você não sabia? Comenta aqui 👇\n#ComoEscolher #DicaDaFeira #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
+      "status": "publicado",
+      "media_id": "17901162756397804"
     },
     {
       "id": "2026-10-31-06:53-story-sabado-feira",
@@ -217,17 +229,6 @@
       ],
       "legenda": "Qualidade que você vê de longe 👀🍅\nCada caixa é aberta e conferida assim que chega. O que não está bonito não vai pra banca — simples assim. Arrasta e veja o caminho da fruta até você 👉\nSe não serve pra nossa mesa, não vai pra sua!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\n#Compromisso3Irmãos #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
       "status": "pausado"
-    },
-    {
-      "id": "2026-10-31-05:57-reel-como-escolher",
-      "data": "2026-10-31",
-      "tipo": "reel",
-      "hora": "05:57",
-      "video": "reels/como-escolher.mp4",
-      "capa": "reels/como-escolher-capa.jpg",
-      "commit": "577ee8b6450dfcc270f102172059a4e18d0b76b4",
-      "legenda": "Como escolher fruta boa e não errar mais! 🍉🥭\nSalva esse vídeo pra lembrar na hora da feira 👇\n1️⃣ Melancia: dê uns tapinhas, som oco é sinal de madura\n2️⃣ Mamão: casca amarelando e firme ao apertar\n3️⃣ Tangerina: pegue a mais pesada, é a mais suculenta\n4️⃣ Kiwi: apertou e cedeu um pouquinho? Tá no ponto\n5️⃣ Uva: bagos firmes e bem presos no cacho\nOu deixa que a gente escolhe pra você aqui no Hortifruti 3 Irmãos: manda sua lista no Zap!\n📲 (83) 99937-8165 · 📍 Rua Francisco Euclides Fernandes, 1200 — Uiraúna\nQual dessas dicas você não sabia? Comenta aqui 👇\n#ComoEscolher #DicaDaFeira #Uiraúna #Hortifruti3Irmãos #FeiraFresca",
-      "status": "pendente"
     },
     {
       "id": "2026-11-01-06:53-story-bom-dia-3",
