@@ -93,7 +93,7 @@ Três versões para revezar nas sextas:
 
 ## O que ainda falta
 
-- **Preços e validade** das ofertas da semana: com eles, o encarte de ofertas entra nas sextas e é o melhor post para turbinar.
-- **Horário de funcionamento no sábado**, para os stories de sexta e sábado.
+- **Sem preços nos posts**: decisão do dono (a concorrência acompanha o perfil). A venda vai pelo Zap.
+- Sábado: aberto das **4h às 15h** (já nos stories de sábado e no reel de sexta).
 - Vídeos de **mão pegando o produto** e da **fachada**, para o Roteiro 2 e o reel da cesta.
 - **Turbinar:** um anúncio por vez, no reel da segunda (Semana A) ou da sexta, objetivo "Mais mensagens", Uiraúna + 15 km, 3 dias.
