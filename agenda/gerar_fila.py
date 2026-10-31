@@ -161,6 +161,9 @@ STORIES_VIDEO = {
 }
 
 BOM_DIA = ["bom-dia-1", "bom-dia-2", "bom-dia-3"]
+# Série nova de bom dia (reels/story_bomdia.py), pedida pelo dono em 31/10.
+BOM_DIA_NOVO_DESDE = date(2026, 11, 1)
+BOM_DIA_NOVO = ["bom-dia-previsao", "bom-dia-jornal", "bom-dia-polaroid", "bom-dia-nota", "bom-dia-gigante"]
 DICAS = ["dica-tomate", "dica-banana", "dica-folhas", "dica-manga", "dica-cebola",
          "dica-limao", "dica-abacate", "almoco", "zap-3", "dica-cenoura", "dica-morango",
          "dica-alho", "dica-melancia", "dica-cheiro-verde"]
@@ -210,7 +213,8 @@ def stories_do_dia(n, dia):
     tarde = {4: "fim-de-semana", 5: sabado, 6: f"familia-{n // 7 % 2 + 1}"}.get(
         dia.weekday(), ZAP[n % len(ZAP)])
     dicas = DICAS_FOTO if dia >= FOTOS_DESDE else DICAS
-    return [BOM_DIA[n % len(BOM_DIA)], dicas[n % len(dicas)], tarde]
+    bom_dia = BOM_DIA_NOVO if dia >= BOM_DIA_NOVO_DESDE else BOM_DIA
+    return [bom_dia[n % len(bom_dia)], dicas[n % len(dicas)], tarde]
 
 
 def gerar():
